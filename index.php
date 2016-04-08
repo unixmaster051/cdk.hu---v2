@@ -82,6 +82,7 @@ EOT;
             console.log( "document ready - ran @ submenu script - #1" );
             $('#sub_open').click(function(){
                 $('#sub_invisible').toggleClass('AfterScroll');
+                $('#sub_invisible').toggleClass('BeforeScroll');
 //                alert($(this).attr('id'));
                 console.log('toggleClass  inner-function ran @ submenu script - #2 ');
             });
@@ -123,35 +124,30 @@ EOT;
     </script>
     <script type="text/javascript">
         $(document).ready(function() {
+
+
             $('.isMenuItem').on('click', function(event){
                 event.preventDefault();
-                $('#productWrapper').fadeTo('slow',1.0);
-                console.log('document ready - ran @ expandSubMenuButtonClick2 -> now showing/hiding submenu #');
 
-                console.log('document ready - ran @ .isMenuItem button click -> now showing/hiding submenu #1');
-                $('#productWrapperDefault').fadeOut(500, function(){
-                    $('#' + gridID).fadeIn(500);
+//                $('#productWrapper').fadeTo('slow',1.0);
+
+                 console.log('document ready - ran @ .isMenuItem button click -> now showing/hiding submenu #1');
+                var $gridID = $(this).attr("data-id");
+
+                $('#productWrapperDefault').removeClass('active');
+                $('.grid-container').fadeOut(500,function(){
+                    $('#' + $gridID).fadeIn(500);
+                    console.log('this='+$(this)+',current gridID='+$gridID);
+
                 });
-                var gridID = $(this).attr("data-id");
-
                 $('.isMenuItem').removeClass("active");
                 $(this).addClass("active");
-            });
-        });
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('.isMenuItem').on('click', function(event){
-                event.preventDefault();
-                $('#productWrapper').fadeOut(500, function(){
-                    $('#' + gridID).fadeIn(500);
-                });
-                var gridID = $(this).attr("data-id");
-
 
             });
         });
     </script>
+
+
 
     <!------------------------------------- KONFIGURÁCIÓ, PHP call ------------------------------------------------->
 
@@ -171,7 +167,8 @@ EOT;
     "ö",
     "ő",
     "ü",
-    "ű"
+    "ű",
+    " "
     );
     $latinReplaceArray = array(
     "a",
@@ -182,7 +179,8 @@ EOT;
     "o",
     "o",
     "u",
-    "u"
+    "u",
+    "_"
     );
     $productArray = array(
         0 => "Kulcstartók",
@@ -215,7 +213,7 @@ EOT;
                     <li class="animated wow fadeInLeft" data-wow-delay="0s"><a class="has-submenu" href="#termekek" id="sub_open">Termékeink</a>
 
 					<li class="animated wow fadeInLeft" data-wow-delay="0s"><a href="#pictures">Galéria</a></li>
-					<li class="animated wow fadeInLeft" data-wow-delay=".1s"><a href="#app_features">Rólunk</a></li>
+					<li class="animated wow fadeInLeft" data-wow-delay=".1s"><a href="#about">Rólunk</a></li>
 					<li class="animated wow fadeInLeft" data-wow-delay=".2s"><a href="#testimonials">Kapcsolat</a></li>
 				</ul>
 			</nav>
@@ -242,8 +240,13 @@ EOT;
         <a href="#" class="scrollToTop"></a>
 		<div class="container">
 			<div class="caption">
-				<h1 class="text-uppercase  animated wow fadeInLeft">Ide jön majd a tartalom</h1>
-				<p class="text-lowercase  animated wow fadeInLeft">....</p>
+				<h1 class="text-uppercase  animated wow fadeInLeft">Üdvözlöm weboldalunkon!</h1>
+				<p class="text-primary animated wow fadeInLeft">
+                    Egyéni vállalkozóként több mint 10 éve foglalkozunk a fenti termékek gyártásával,
+                    illetve forgalmazásával. Kisvállalkozásként elsődleges célunk az ügyfelek gyors
+                    és pontos kiszolgálása.
+                    Elkészítjük egyedi reklámtárgyát, hogy Ön mindig szem előtt legyen...
+                </p>
 
 				<a href="#" class="app_store_btn text-uppercase animated wow fadeInLeft">
 					<i class="iphone_icon"></i>
@@ -289,11 +292,16 @@ EOT;
                 </div>
             </header>
         </section>
-        <div class="row text-center caption grey" id="features_center"><h1 class="animated wow fadeInLeft">Termékeink</h1><a href="javascript:void(0)" id="expandSubMenu">Termékek mutatása</a></div>
-        <div class="container" id="productWrapper" style="display: block !important;">
-            <div class="grid-container" id="productWrapperDefault" style="display: block !important;">
+        <div class="row text-center caption grey" id="features_center"><h1 class="animated wow fadeInLeft">Termékeink</h1><a href="javascript:void(0)" id="expandSubMenu">Termékek mutatása/elrejtése</a></div>
+        <div class="container" id="productWrapper" >
+            <div class="grid-container active" id="productWrapperDefault">
                 <ul class="rig columns">
-                    <li class="block"><span></span></li>
+                    <li class="block">
+                        <img src="<?=_tempPrefix?>/res/img/cdkLogo.png" alt="Something's fucked up with productWrapperDiv-s img src"/>
+                        <span>
+                            Default szöveg (productWrapperDefault div is active)
+                        </span>
+                    </li>
                 </ul>
             </div>
             <?
@@ -307,13 +315,13 @@ EOT;
                      <ul class="rig columns" >
                         <li class="block">
 EOT;
-                            echo '<img src = '._tempPrefix.'"/images/'
+                            echo '<img src = '._tempPrefix.'/images/'
                                  .str_replace( $latinFindArray, $latinReplaceArray,
                                     strtolower( $productArray[ $i ] ) )
                                     .'/'
                                  . str_replace( $latinFindArray, $latinReplaceArray,
                                     strtolower( $productArray[ $i ] ) )
-                                    .'_'.$i. '.jpg" />';
+                                    .'_'.$i. '.jpg />';
                             echo '<span>' . $productArray[ $i ] . '</span>';
                             echo <<<EOT
                         </li>
@@ -373,42 +381,69 @@ EOT;
 
 
 	<!--  App Features Section  -->
-	<section class="app_features" id="app_features">
+	<section class="about" id="about">
         <div class="row text-center" id="features_center">Rólunk</div>
 		<div class="container">
 
 			<div class="row text-center">
 				<div class="col-sm-4 col-md-4 details animated wow fadeInDown" data-wow-delay="0s">
 					<img src="img/f_icon1.png" alt="" title="">
-					<h1 class="text-uppercase">malesuada fames turpis.</h1>
-					<p class="text-lowercase">vel ultrices mauris libero id diam. Vivamus tellus sagittis facilisis nisi quis mollis risus quisque ultrices elit.</p>
+					<h1 class="text-uppercase">Kulcstartók</h1>
+					<p class="text-lowercase">
+                       - STANDARD MÉRETŰ 2 OLDALAS, NIKKELEZETT, FÉM KERETES,
+                        3D MŰGYANTA BEVONATÚ KULCSTARTÓK
+                    </p>
+                    <p class="text-lowercase">
+                      -  EGYEDI MÉRETŰ 2 OLDALAS FÉM KERET NÉLKÜLI
+                        3D MŰGYANTA BEVONATÚ KULCSTARTÓK
+                    </p>
+                    <p class="text-lowercase">
+                       - EGYEDI MÉRETŰ FÉM KERETES KULCSTARTÓK
+                    </p>
 				</div>
 				<div class="col-sm-4 col-md-4 details animated wow fadeInDown" data-wow-delay=".1s">
 					<img src="img/f_icon2.png" alt="" title="">
-					<h1 class="text-uppercase">malesuada fames turpis.</h1>
-					<p class="text-lowercase">vel ultrices mauris libero id diam. Vivamus tellus sagittis facilisis nisi quis mollis risus quisque ultrices elit.</p>
+					<h1 class="text-uppercase">Kitűzők</h1>
+					<p class="text-lowercase">
+                        - Öntött fém kitűzők
+					</p>
+                    <p class="text-lowercase">
+                        - Öntött, festett fém kitűzők
+                    </p>
+                    <p class="text-lowercase">
+                        - ÖNTÖTT, FESTETT FÉM KITŰZŐK MŰGYANTA BEVONATTAL
+                    </p>
+                    <p class="text-lowercase">
+                        - 3D MŰGYANTA BEVONATÚ KITŰZŐK FÉM ALAPON
+                    </p>
+                    <p class="text-lowercase">
+                        - 3D MŰGYANTA BEVONATÚ KITŰZŐK FÉM ALAP NÉLKÜL
+                    </p>
 				</div>
 				<div class="col-sm-4 col-md-4 details animated wow fadeInDown" data-wow-delay=".2s">
 					<img src="img/f_icon3.png" alt="" title="">
-					<h1 class="text-uppercase">malesuada fames turpis.</h1>
-					<p class="text-lowercase">vel ultrices mauris libero id diam. Vivamus tellus sagittis facilisis nisi quis mollis risus quisque ultrices elit.</p>
+					<h1 class="text-uppercase">3d műgyanta bevonatú matricák</h1>
+					<p class="text-lowercase"></p>
 				</div>
+                <div class="col-sm-4 col-md-4 details animated wow fadeInDown row text-center" data-wow-delay=".3s">
+                    <h1 class="text-uppercase">3d műgyanta bevonatú betűk</h1>
+                </div>
 			</div>
 			<div class="row text-center">
 				<div class="col-sm-4 col-md-4 details animated wow fadeInDown" data-wow-delay="0s">
 					<img src="img/f_icon4.png" alt="" title="">
-					<h1 class="text-uppercase">malesuada fames turpis.</h1>
-					<p class="text-lowercase">vel ultrices mauris libero id diam. Vivamus tellus sagittis facilisis nisi quis mollis risus quisque ultrices elit.</p>
+					<h1 class="text-uppercase"></h1>
+					<p class="text-lowercase"></p>
 				</div>
 				<div class="col-sm-4 col-md-4 details animated wow fadeInDown" data-wow-delay=".1s">
 					<img src="img/f_icon5.png" alt="" title="">
-					<h1 class="text-uppercase">malesuada fames turpis.</h1>
-					<p class="text-lowercase">vel ultrices mauris libero id diam. Vivamus tellus sagittis facilisis nisi quis mollis risus quisque ultrices elit.</p>
+					<h1 class="text-uppercase"></h1>
+					<p class="text-lowercase"></p>
 				</div>
 				<div class="col-sm-4 col-md-4 details animated wow fadeInDown" data-wow-delay=".2s">
 					<img src="img/f_icon6.png" alt="" title="">
-					<h1 class="text-uppercase">malesuada fames turpis.</h1>
-					<p class="text-lowercase">vel ultrices mauris libero id diam. Vivamus tellus sagittis facilisis nisi quis mollis risus quisque ultrices elit.</p>
+					<h1 class="text-uppercase"></h1>
+					<p class="text-lowercase"></p>
 				</div>
 			</div>
 
@@ -470,7 +505,14 @@ EOT;
 
 	<!--  Email Subscription Section  -->
 	<section class="sub_box">
-		<p class="cta_text animated wow fadeInDown">Írjon nekünk!</p>
+		<p class="cta_text animated wow fadeInDown text-center">Írjon nekünk!</p>
+        <p class="text-center">
+            CDK Kovács Róbert E. V.
+            3200 Gyöngyös, Bartók Béla u. 27.
+            Tel.,fax: 37/301-068
+            Mobil: 70/243-6020
+            E-mail: cdk@cdk.hu
+        </p>
 		<form action="javascript:void(0);" method="post" class="animated wow fadeIn" data-wow-duration="2s" id="submit_form">
 			<input type="email" id="mc-email" placeholder="Enter your email"/>
 			<button type="submit" id="mc_submit">

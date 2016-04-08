@@ -20,7 +20,7 @@
      * TODO: új vektoros cdk logó használata (SVG)
      * TODO: új képekkel munka
      * TODO: képek rendezése, mappaszerkezet - refactor: images->img, img/menunev
-     * TODO: .app_features @main.css:498 -- > többi property hozzáigazítása a backgnd image színeihez (moz, webkit, o, lingrad)
+     * TODO: .about @main.css:498 -- > többi property hozzáigazítása a backgnd image színeihez (moz, webkit, o, lingrad)
      * TODO: oldal egyes részeinek készre generálása (szempont: responsive!)
      * TODO: @media querykkel méretezni a galéria div-et
      * TODO: színek (szar zöld) cseréje a terrakotta színek valamelyikére -WEBKIT, O-, IE-RE IS !

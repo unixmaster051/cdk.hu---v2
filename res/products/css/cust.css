@@ -81,7 +81,7 @@ header .burger_icon.active {
     word-break: break-word;
 }
 
-.app_features{
+.about {
     padding: 40px 0 20px 0;
 }
 
@@ -89,7 +89,7 @@ header .burger_icon.active {
     background: url("/new/res/products/img/underc.jpg"); /* TODO: newprefix here */
 }
 
-.app_features{
+.about {
 
     background-image: -moz-linear-gradient(bottom, #e0590f 0%, #b9480a 0.27%, #5a2811 99.46%, #5a3811 100%);
 }
@@ -230,7 +230,7 @@ nav.pull-left:nth-child(1){ /* menu_sub -> container div ---> nav (the secondary
 
 section.menu_sub:nth-child(1) > header:nth-child(1){  /* menu_sub -> container div --->2nd header--> nav (the secondary menu)*/
 
-    background: linear-gradient(#fbfbfb 0%, #A79E85 100%);
+    /*background: linear-gradient(#fbfbfb 0%, #A79E85 100%);*/
 }
 
 header .BeforeScroll li a:hover{
@@ -294,4 +294,12 @@ header nav li a:focus{
     filter: opacity(100%);
     text-shadow: -1px 1px 8px #F08800, 1px -1px 8px #FF2D00;
  /* jovofelev.php-ból átvéve */
+}
+
+.grid-container{
+    display: none;
+}
+
+.grid-container.active{
+    display: block !important;
 }

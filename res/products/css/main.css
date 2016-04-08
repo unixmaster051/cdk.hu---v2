@@ -495,7 +495,7 @@ a.app_link{
 
 /*		App features 		*/
 
-.app_features{
+.about {
 	width: 100%;
 	padding: 100px 0 20px 0;
 	background-color: #333;
@@ -505,7 +505,7 @@ a.app_link{
 	background-image: linear-gradient(bottom, #47ad76 0%, #47ad76 0.27%, #40c27d 99.46%, #40c27d 100%);
 }
 
-.app_features h1{
+.about h1{
 	color: #fff;
 	font-family: "open_semibold", Helvetica, Arial, sans-serif;
 	font-size: 20px;
@@ -513,7 +513,7 @@ a.app_link{
 	word-break: break-word;
 }
 
-.app_features p{
+.about p{
 	color: #e0f7eb;
 	font-family: "open_regular", Helvetica, Arial, sans-serif;
 	font-size: 16px;
@@ -521,11 +521,11 @@ a.app_link{
 	line-height: 28px;
 }
 
-.app_features .details{
+.about .details{
 	margin-bottom: 80px;
 }
 
-.app_features .details:nth-child(3n+1){
+.about .details:nth-child(3n+1){
 	clear: both;
 }
 
