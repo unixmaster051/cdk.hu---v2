@@ -12,9 +12,10 @@ EOT;
 		}
 		else define('_DEBUG', FALSE); //manual setting
 
-        require_once($rp."/res/config.php");
+         require_once('/var/www/home/ws/cdk/public_html/new/res/config.php');
 
-	?>
+
+    ?>
 
 
     <title>:: CDK city card ::</title>
@@ -32,29 +33,29 @@ EOT;
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
     <meta name="rating" content="general">
-	<link rel="stylesheet" type="text/css" href="<?= $_SERVER['DOCUMENT-ROOT']."/CDK/" ?>/res/products/css/bootstrap.css"/>
-	<link rel="stylesheet" type="text/css" href="<?= $_SERVER['DOCUMENT-ROOT']."/CDK/" ?>/res/products/css/owl.transitions.css"/>
-	<link rel="stylesheet" type="text/css" href="<?= $_SERVER['DOCUMENT-ROOT']."/CDK/" ?>/res/products/css/owl.carousel.css"/>
-	<link rel="stylesheet" type="text/css" href="<?= $_SERVER['DOCUMENT-ROOT']."/CDK/" ?>/res/products/css/animate.css"/>
-	<link rel="stylesheet" type="text/css" href="<?= $_SERVER['DOCUMENT-ROOT']."/CDK/" ?>/res/products/css/main.css"/> <!-- this this this! -->
-    <link rel="stylesheet" type="text/css" href="<?= $_SERVER['DOCUMENT-ROOT']."/CDK/" ?>/res/productsGrid.css"/>
+	<link rel="stylesheet" type="text/css" href="<?= $_SERVER['DOCUMENT-ROOT']._tempPrefix ?>/res/products/css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="<?= $_SERVER['DOCUMENT-ROOT']._tempPrefix ?>/res/products/css/owl.transitions.css"/>
+	<link rel="stylesheet" type="text/css" href="<?= $_SERVER['DOCUMENT-ROOT']._tempPrefix ?>/res/products/css/owl.carousel.css"/>
+	<link rel="stylesheet" type="text/css" href="<?= $_SERVER['DOCUMENT-ROOT']._tempPrefix ?>/res/products/css/animate.css"/>
+	<link rel="stylesheet" type="text/css" href="<?= $_SERVER['DOCUMENT-ROOT']._tempPrefix ?>/res/products/css/main.css"/> <!-- this this this! -->
+    <link rel="stylesheet" type="text/css" href="<?= $_SERVER['DOCUMENT-ROOT']._tempPrefix ?>/res/productsGrid.css"/>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="<?= $_SERVER['DOCUMENT-ROOT']."/CDK/" ?>/res/products/css/cust.css"/>
+    <link rel="stylesheet" type="text/css" href="<?= $_SERVER['DOCUMENT-ROOT']._tempPrefix ?>/res/products/css/cust.css"/>
 
 
-	<script type="text/javascript" src="<?= $_SERVER['DOCUMENT-ROOT']."/CDK" ?>/res/products/js/jquery.js"></script>
-	<script type="text/javascript" src="<?= $_SERVER['DOCUMENT-ROOT']."/CDK" ?>/res/products/js/ajaxchimp.js"></script>
-	<script type="text/javascript" src="<?= $_SERVER['DOCUMENT-ROOT']."/CDK" ?>/res/products/js/scrollTo.js"></script>
-	<script type="text/javascript" src="<?= $_SERVER['DOCUMENT-ROOT']."/CDK" ?>/res/products/js/owl.carousel.min.js"></script>
-	<script type="text/javascript" src="<?= $_SERVER['DOCUMENT-ROOT']."/CDK" ?>/res/products/js/wow.js"></script>
-	<script type="text/javascript" src="<?= $_SERVER['DOCUMENT-ROOT']."/CDK" ?>/res/products/js/parallax.js"></script>
-	<script type="text/javascript" src="<?= $_SERVER['DOCUMENT-ROOT']."/CDK" ?>/res/products/js/nicescroll.js"></script>
-	<script type="text/javascript" src="<?= $_SERVER['DOCUMENT-ROOT']."/CDK" ?>/res/products/js/main.js"></script>
+	<script type="text/javascript" src="<?= $_SERVER['DOCUMENT-ROOT']._tempPrefix ?>/res/products/js/jquery.js"></script>
+	<script type="text/javascript" src="<?= $_SERVER['DOCUMENT-ROOT']._tempPrefix ?>/res/products/js/ajaxchimp.js"></script>
+	<script type="text/javascript" src="<?= $_SERVER['DOCUMENT-ROOT']._tempPrefix ?>/res/products/js/scrollTo.js"></script>
+	<script type="text/javascript" src="<?= $_SERVER['DOCUMENT-ROOT']._tempPrefix ?>/res/products/js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="<?= $_SERVER['DOCUMENT-ROOT']._tempPrefix ?>/res/products/js/wow.js"></script>
+	<script type="text/javascript" src="<?= $_SERVER['DOCUMENT-ROOT']._tempPrefix ?>/res/products/js/parallax.js"></script>
+	<script type="text/javascript" src="<?= $_SERVER['DOCUMENT-ROOT']._tempPrefix ?>/res/products/js/nicescroll.js"></script>
+	<script type="text/javascript" src="<?= $_SERVER['DOCUMENT-ROOT']._tempPrefix ?>/res/products/js/main.js"></script>
 <!--    <script type="text/javascript" src="--><?//= $_SERVER['DOCUMENT-ROOT']."/CDK/js" ?><!--/jquery-2.2.2.js"></script>-->
 
     <!-- --------------------------------------------SCRIPTEK ------------------------------------------------------>
@@ -154,7 +155,7 @@ EOT;
 
     <!------------------------------------- KONFIGURÁCIÓ, PHP call ------------------------------------------------->
 
-<!--	 include_once($_SERVER['DOCUMENT-ROOT']."/CDK"."/res/debugIncl.php")-->
+<!--	 include_once($_SERVER['DOCUMENT-ROOT']._tempPrefix."/res/debugIncl.php")-->
 	<!--
 			debugIncl.php -will echo the debug message box's stylesheet <link rel>, include the main debug script,
 			and include the debug script's wrapper's render, if constant  "_DEBUG" is declared as TRUE.
@@ -306,7 +307,7 @@ EOT;
                      <ul class="rig columns" >
                         <li class="block">
 EOT;
-                            echo '<img src = "/CDK/images/'
+                            echo '<img src = '._tempPrefix.'"/images/'
                                  .str_replace( $latinFindArray, $latinReplaceArray,
                                     strtolower( $productArray[ $i ] ) )
                                     .'/'
@@ -353,7 +354,7 @@ EOT;
 	<section class="pictures" id="pictures">
 		<div class="container">
 			<?
-				include_once($_SERVER['DOCUMENT_ROOT']."/CDK/res/juiceEmbed.php");
+				include_once($_SERVER['DOCUMENT_ROOT']._tempPrefix."/res/juiceEmbed.php");
 				$embed = new embed();
 				$obj = $embed->main("800","500","kulcstartok");
 				echo($obj);

@@ -86,7 +86,7 @@ header .burger_icon.active {
 }
 
 .hero{
-    background: url("/CDK/res/products/img/underc.jpg");
+    background: url("/new/res/products/img/underc.jpg"); /* TODO: newprefix here */
 }
 
 .app_features{
@@ -110,7 +110,7 @@ a.app_store_btn:hover {
 
 #tslider .owl-controls .owl-prev:hover, #tslider .owl-controls .owl-next:hover {
     cursor: pointer;
-    background: url('../../../test/img/nav_arrow.png') no-repeat;
+    background: url('../../../test/img/nav_arrow.png') no-repeat;  /*TODO: a next hoverje ugyanaz mint a prev-é */
     filter: contrast(35%);
 }
 
