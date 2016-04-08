@@ -2,15 +2,16 @@
 <html lang="en-us">
 <head>
 	<?
-	define('_DOCROOT',$_SERVER['DOCUMENT-ROOT']."/CDK");
+        $rp = realpath(dirname(__FILE__) . '/..');
+
 		if(isset($_GET['debug'])){
-			define(_DEBUG,TRUE);
+			define('_DEBUG',TRUE);
 			echo <<<EOT
 		<!-- Debug messages are ON. -->
 EOT;
 		}
-		else define(_DEBUG, FALSE); //manual setting
-        $rp = realpath(dirname(__FILE__) . '/..');
+		else define('_DEBUG', FALSE); //manual setting
+
         require_once($rp."/res/config.php");
 
 	?>

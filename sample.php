@@ -1,3 +1,6 @@
+<?php
+    ini_set('display_errors', 1);
+    echo <<<EOT
 <!DOCTYPE html>
 <html>
 <head lang="en">
@@ -8,3 +11,7 @@
 It works now!
 </body>
 </html>
+
+EOT;
+
+

@@ -2,135 +2,135 @@
 <html>
 <head>
     <meta http-equiv="Content-Language" content="hu">
-	<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
-    <? include_once("/home/u871523770/public_html/CDK/res/config.php");?>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <? include_once('/var/www/home/ws/cdk/public_html/new/res/config.php');?>
 
         <!-- animsition.css -->
-    <link rel="stylesheet" href="<?=dirname(__FILE__)?> "CDK/css_opt/animsition.min.css">
+    <link rel="stylesheet" href="<?=_tempPrefix?>/css_opt/animsition.min.css">
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- animsition.js -->
-    <script src="/CDK/js/animsition.min.js"></script>
+    <script src="<?=_tempPrefix?>/js/animsition.min.js"></script>
 
 
-    <title>Hűtőmágneseink</title>
-<link rel="stylesheet" href="/CDK/res/unlisted_site.css" type="text/css">
+    <title>HĹ±tĹ‘mĂˇgneseink</title>
+<link rel="stylesheet" href="<?=_tempPrefix?>/res/unlisted_site.css" type="text/css">
 <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 
 <?
-        $citiesArray = array(
-            0  => "Aggtelek",
-            1  => "Baja",
-            2  => "Békéscsaba",
-            3  => "Bogács",
-            4  => "Budapest",
-            5  => "Bp . Szécheny fürdő",
-            6  => "Bugac",
-            7  => "Bükfürdő",
-            8  => "Bükkszék",
-            9  => "Cserkeszőlő",
-            10 => "Debrecen",
-            11 => "Diósgyőr",
-            12 => "Eger",
-            13 => "Esztergom",
-            14 => "Fertő tó",
-            15 => "Fertőd",
-            16 => "Gödöllő",
-            17 => "Gyöngyös",
-            18 => "Gyopárosfürdő",
-            19 => "Győr",
-            20 => "Gyula",
-            21 => "Hajdúszoboszló",
-            22 => "Harkány",
-            23 => "Hévíz",
-            24 => "Hollókő",
-            25 => "Hortobágy",
-            26 => "Jósvafő",
-            27 => "Kaposvár",
-            28 => "Kecskemét",
-            29 => "Kékestető",
-            30 => "Keszthely",
-            31 => "Komárom",
-            32 => "Kőszeg",
-            33 => "Mátraderecske",
-            34 => "Mezőkövesd",
-            35 => "Miskolc",
-            36 => "Miskolctapolca",
-            37 => "Mohács",
-            38 => "Ópusztaszer",
-            39 => "Operaház",
-            40 => "Kerekegyháza",
-            41 => "Nyíregyháza",
-            42 => "Parádfürdő",
-            43 => "Parádsasvár",
-            44 => "Pécs",
-            45 => "Salgótarján",
-            46 => "Sárospatak",
-            47 => "Sárvár",
-            48 => "Sástó",
-            49 => "Sátoraljaújhely",
-            50 => "Siklós",
-            51 => "Siófok",
-            52 => "Sopron",
-            53 => "Sümeg",
-            54 => "Szécsény",
-            55 => "Szeged",
-            56 => "Székesfehérvár",
-            57 => "Szekszárd",
-            58 => "Szentenre",
-            59 => "Szilvásvárad",
-            60 => "Szolnok",
-            61 => "Szombathely",
-            62 => "Tata",
-            63 => "Tihany",
-            64 => "Tiszaújváros",
-            65 => "Tokaj",
-            66 => "Visegrád",
-            67 => "Zalaegerszeg",
-            68 => "Zalakaros"
-        );
-        $animalsArray = array(
-            0 => "Háziállatok",
-            1 => "Vadállatok",
-            2 => "Cicák",
-            3 => "Kutyák",
-            4 => "Lovak"
-        );
-        $othersArray = array(
-            0 => "Föld",
-            1 => "Házi áldás",
-            2 => "Jézus",
-            3 => "Karácsony",
-            4 => "Lázár lovaspark",
-            5 => "Magyarország",
-            6 => "Mátra"
-        );
+    $citiesArray = array(
+        0  => "Aggtelek",
+        1  => "Baja",
+        2  => "BĂ©kĂ©scsaba",
+        3  => "BogĂˇcs",
+        4  => "Budapest",
+        5  => "Bp . SzĂ©cheny fĂĽrdĂµ",
+        6  => "Bugac",
+        7  => "BĂĽkfĂĽrdĂµ",
+        8  => "BĂĽkkszĂ©k",
+        9  => "CserkeszĂµlĂµ",
+        10 => "Debrecen",
+        11 => "DiĂłsgyĂµr",
+        12 => "Eger",
+        13 => "Esztergom",
+        14 => "FertĂµ tĂł",
+        15 => "FertĂµd",
+        16 => "GĂ¶dĂ¶llĂµ",
+        17 => "GyĂ¶ngyĂ¶s",
+        18 => "GyopĂˇrosfĂĽrdĂµ",
+        19 => "GyĂµr",
+        20 => "Gyula",
+        21 => "HajdĂşszoboszlĂł",
+        22 => "HarkĂˇny",
+        23 => "HĂ©vĂ­z",
+        24 => "HollĂłkĂµ",
+        25 => "HortobĂˇgy",
+        26 => "JĂłsvafĂµ",
+        27 => "KaposvĂˇr",
+        28 => "KecskemĂ©t",
+        29 => "KĂ©kestetĂµ",
+        30 => "Keszthely",
+        31 => "KomĂˇrom",
+        32 => "KĂµszeg",
+        33 => "MĂˇtraderecske",
+        34 => "MezĂµkĂ¶vesd",
+        35 => "Miskolc",
+        36 => "Miskolctapolca",
+        37 => "MohĂˇcs",
+        38 => "Ă“pusztaszer",
+        39 => "OperahĂˇz",
+        40 => "KerekegyhĂˇza",
+        41 => "NyĂ­regyhĂˇza",
+        42 => "ParĂˇdfĂĽrdĂµ",
+        43 => "ParĂˇdsasvĂˇr",
+        44 => "PĂ©cs",
+        45 => "SalgĂłtarjĂˇn",
+        46 => "SĂˇrospatak",
+        47 => "SĂˇrvĂˇr",
+        48 => "SĂˇstĂł",
+        49 => "SĂˇtoraljaĂşjhely",
+        50 => "SiklĂłs",
+        51 => "SiĂłfok",
+        52 => "Sopron",
+        53 => "SĂĽmeg",
+        54 => "SzĂ©csĂ©ny",
+        55 => "Szeged",
+        56 => "SzĂ©kesfehĂ©rvĂˇr",
+        57 => "SzekszĂˇrd",
+        58 => "Szentenre",
+        59 => "SzilvĂˇsvĂˇrad",
+        60 => "Szolnok",
+        61 => "Szombathely",
+        62 => "Tata",
+        63 => "Tihany",
+        64 => "TiszaĂşjvĂˇros",
+        65 => "Tokaj",
+        66 => "VisegrĂˇd",
+        67 => "Zalaegerszeg",
+        68 => "Zalakaros"
+    );
+    $animalsArray = array(
+        0 => "HĂˇziĂˇllatok",
+        1 => "VadĂˇllatok",
+        2 => "CicĂˇk",
+        3 => "KutyĂˇk",
+        4 => "Lovak"
+    );
+    $othersArray = array(
+        0 => "FĂ¶ld",
+        1 => "HĂˇzi ĂˇldĂˇs",
+        2 => "JĂ©zus",
+        3 => "KarĂˇcsony",
+        4 => "LĂˇzĂˇr lovaspark",
+        5 => "MagyarorszĂˇg",
+        6 => "MĂˇtra"
+    );
 
-        $dataId_city = null;
+    $dataId_city = null;
 
         $n = sizeof($citiesArray);
-        $latinFindArray = array(
-            "á",
-            "é",
-            "í",
-            "ó",
-            "ú",
-            "ö",
-            "ő",
-            "ü",
-            "ű"
-        );
-        $latinReplaceArray = array(
-            "a",
-            "e",
-            "i",
-            "o",
-            "u",
-            "o",
-            "o",
-            "u",
-            "u"
-        );
+    $latinFindArray = array(
+        "Ăˇ",
+        "Ă©",
+        "Ă­",
+        "Ăł",
+        "Ăş",
+        "Ă¶",
+        "Ăµ",
+        "ĂĽ",
+        "Ĺ±"
+    );
+    $latinReplaceArray = array(
+        "a",
+        "e",
+        "i",
+        "o",
+        "u",
+        "o",
+        "o",
+        "u",
+        "u"
+    );
     ?>
 
 <style type="text/css">
@@ -172,11 +172,11 @@
 
 <div class="wrapper animsition">
 	<div class="container">
-		<h1>Hűtőmágneseink</h1>
+		<h1>HĹ±tĹ‘mĂˇgneseink</h1>
 		<ul class="grid-nav">
-			<li><a href="#" data-id="two-columns" class="animsition-link active">Helységek</a></li> <!-- 2col -->
-			<li><a href="#" data-id="one-col-1" class="animsition-link">Állatok</a></li> <!-- 1col -->
-			<li><a href="#" data-id="one-col-2" class="animsition-link">Egyéb</a></li>  <!-- 1col -->
+			<li><a href="#" data-id="two-columns" class="animsition-link active">HelysĂ©gek</a></li> <!-- 2col -->
+			<li><a href="#" data-id="one-col-1" class="animsition-link">Ăllatok</a></li> <!-- 1col -->
+			<li><a href="#" data-id="one-col-2" class="animsition-link">EgyĂ©b</a></li>  <!-- 1col -->
 		</ul>
     <hr/>
 
@@ -240,10 +240,10 @@ EOT;
              <ul class="rig columns" >
                 <li>
 EOT;
-                echo '<img src = "/CDK/hutomagnes/varosok/' .str_replace($latinFindArray,$latinReplaceArray,strtolower($citiesArray[$i])). '_sorszamok.jpg" />';
+                echo '<img src = "'._tempPrefix.'/hutomagnes/varosok/' .str_replace($latinFindArray,$latinReplaceArray,strtolower($citiesArray[$i])). '_sorszamok.jpg" />';
                 echo '<h3 >' . $citiesArray[ $i ] . '</h3>';
                 echo <<<EOT
-                <p> alcím</p>
+                <p> alcďż˝m</p>
                 </li>
             </ul>
         </div>
@@ -258,10 +258,10 @@ EOT;
              <ul class="rig columns" >
                 <li>
 EOT;
-                echo '<img src = "/CDK/hutomagnes/allatok/' .str_replace($latinFindArray,$latinReplaceArray,strtolower($animalsArray[$i])). '_sorszamok.jpg" />';
+                echo '<img src = "'._tempPrefix.'/hutomagnes/allatok/' .str_replace($latinFindArray,$latinReplaceArray,strtolower($animalsArray[$i])). '_sorszamok.jpg" />';
                 echo '<h3 >' . $animalsArray[ $i ] . '</h3>';
                 echo <<<EOT
-                <p> alcím</p>
+                <p> alcďż˝m</p>
                 </li>
             </ul>
         </div>
@@ -277,10 +277,10 @@ EOT;
              <ul class="rig columns" >
                 <li>
 EOT;
-                echo '<img src = "/CDK/hutomagnes/egyeb/' . str_replace( $latinFindArray, $latinReplaceArray, strtolower( $othersArray[ $i ] ) ) . '_sorszamok.jpg" />';
+                echo '<img src = "'._tempPrefix.'/hutomagnes/egyeb/' . str_replace( $latinFindArray, $latinReplaceArray, strtolower( $othersArray[ $i ] ) ) . '_sorszamok.jpg" />';
                 echo '<h3 >' . $othersArray[ $i ] . '</h3>';
                 echo <<<EOT
-                <p> alcím</p>
+                <p> alcďż˝m</p>
                 </li>
             </ul>
         </div>
