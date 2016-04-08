@@ -1,0 +1,46 @@
+body{
+    text-align: center;
+}
+.info, .success, .warning, .error, .validation {
+    border: 1px solid;
+    margin: 10px 0px;
+    padding:15px 10px 15px 50px;
+    min-width: 600px;
+    max-width: 800px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    /*margin-inline-start: 264px;*/
+    /*margin-inline-end: 264px;*/
+    display: inline-block;
+    zoom: 1;
+    /*display: inline; *//* ie hack */
+    position: relative;
+    transform: translate(49%, 0%);
+    width: 51%;
+    /*height:13%*/
+}
+.info {
+    color: #00529B;
+    background-color: #BDE5F8;
+    background-image: url('../res/conf/debugMsgImages/Knob%20Info.png');
+}
+.success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    background-image:url('../res/conf/debugMsgImages/Knob%20Valid%20Green.png');
+}
+.warning {
+    color: #9F6000;
+    background-color: #FEEFB3;
+    background-image: url('../res/conf/debugMsgImages/Knob%20Attention.png');
+}
+.error {
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('../res/conf/debugMsgImages/Knob%20Cancel.png');
+}
+.hide {
+    display: none;
+}

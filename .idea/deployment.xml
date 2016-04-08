@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="CDK.hu" uploadOnCheckin="10f2eb27-2378-4083-992a-732108b6461d">
+    <serverData>
+      <paths name="CDK.hu">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="HOSTINGER">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/CDK" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myUploadOnCheckinName" value="CDK.hu" />
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
+

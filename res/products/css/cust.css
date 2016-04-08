@@ -1,0 +1,297 @@
+p#logo{
+    font-family: Genericons;
+    font-size: 36px;
+    font-stretch: expanded;
+}
+
+header nav li{
+margin-left: 0;
+}
+
+header nav a:hover {
+    background: linear-gradient(#E38E57 4%, #833F14 102%, #E38E57 3%);
+}
+header nav a {
+    margin-top: 50px;
+    font: bold 11px Arial;
+    text-decoration: none;
+
+    color: #333333;
+    padding: 53px 10px 58px;
+
+}
+
+header nav li a:hover{
+    color: #351B0B !important;
+}
+
+header .burger_icon.active {
+    background: #AC5C33;
+    color: #ffffff;
+}
+
+@media (max-width: 767px) {
+
+    header nav{
+        background: #924620;
+        border: none;
+    }
+
+    header nav li{
+        border-top: 1px solid #4e2503;
+    }
+
+    header nav li a{
+        border: 3px #333333;
+    }
+    header nav li:first-child a{
+        border:none;
+    }
+    header nav a{
+        margin-top: 0;
+    }
+    header .burger_icon{
+        background: RGBA(135, 64, 27, 0.72);
+        color: #ffffff;
+    }
+    div#juicebox-container{
+        height: 370px;
+        width: 555px;
+    }
+
+    div.jb-dt-main-frame:nth-child(2) > div:nth-child(1){
+        padding:0;
+        left: 30px;
+    }
+
+    .jb-idx-thumbnail-container{
+        display: none;
+    }
+}
+
+
+/* mediaquery-k vége */
+
+#features_center{
+    padding-bottom: 60px;
+    padding-bottom: 60px;
+    color: #fff;
+    font-family: "open_semibold", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    word-break: break-word;
+}
+
+.app_features{
+    padding: 40px 0 20px 0;
+}
+
+.hero{
+    background: url("/CDK/res/products/img/underc.jpg");
+}
+
+.app_features{
+
+    background-image: -moz-linear-gradient(bottom, #e0590f 0%, #b9480a 0.27%, #5a2811 99.46%, #5a3811 100%);
+}
+
+.sub_box{
+
+    background-image: -moz-linear-gradient(bottom, #e0590f 0%, #b9480a 0.27%, #5a2811 99.46%, #5a3811 100%);
+}
+
+a.app_store_btn:hover {
+    border-color: #cc560b;
+    color: #812d06 !important;
+}
+
+.android_icon,.iphone_icon{
+    display: none;
+}
+
+#tslider .owl-controls .owl-prev:hover, #tslider .owl-controls .owl-next:hover {
+    cursor: pointer;
+    background: url('../../../test/img/nav_arrow.png') no-repeat;
+    filter: contrast(35%);
+}
+
+a.app_store_btn{
+    border: 3px solid #525252;
+}
+
+/*.menu_sub > div:nth-child(1) > ul:nth-child(1)*/
+/*{*/
+    /*display: none;*/
+/*}*/
+
+#main-menu{
+
+    padding-left: 0;
+    list-style: none
+
+}
+
+.scrollToTop{
+    width:100px;
+    height:130px;
+    padding:10px;
+    text-align:center;
+    background: whiteSmoke;
+    font-weight: bold;
+    color: #444;
+    text-decoration: none;
+    position:fixed;
+    bottom: 8px;
+    right: 12px;
+    /*display:none;*/
+    background: url('../img/scrolltop3.png') no-repeat 0px 20px;
+    background-size: 95%;
+
+}
+
+#mc_submit i.icon{
+
+    filter: grayscale(100%);
+
+}
+
+
+.scrollToTop:hover{
+    text-decoration:none;
+}
+
+/*transitions and hover enlarge effects of images */
+
+.hoverEnlarge {
+
+    text-align: center;
+    width:150px;
+    height:200px;
+}
+
+.hoverEnlarge img {
+    margin: 4% 0;
+    height: 100%;
+    width: auto;
+    -webkit-transition: margin 0.4s, height 0.4s;
+    -moz-transition: margin 0.4s, height 0.4s;
+    -o-transition: margin 0.4s, height 0.4s;
+    transition: margin 0.4s, height 0.4s;
+}
+
+.hoverEnlarge img:hover {
+    margin: -20px;
+    height: 170%;
+    z-index: 0;
+    position: relative;
+    -webkit-transition: margin 0.4s, height 0.4s;
+    -moz-transition: margin 0.4s, height 0.4s;
+    -o-transition: margin 0.4s, height 0.4s;
+    transition: margin 0.4s, height 0.4s;
+}
+
+.mark{
+    display: none;
+}
+
+header .logo{
+    margin: 20px 100px 0px 0;
+    padding: 0 0 20px 0;
+}
+.grey > h1:nth-child(1){
+    color: #525252;
+    font-family: "open_bold", Helvetica, Arial, sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    word-break: break-word;
+}
+
+#termekek{
+    padding-top: 0;
+}
+.menu_sub {
+    width: 100%;
+    padding: 35px 0;
+    background: #f3f3f3;
+}
+
+.BeforeScroll{
+display: none;
+}
+
+
+.AfterScroll{
+display: block !important;
+}
+
+nav.pull-left:nth-child(1){ /* menu_sub -> container div ---> nav (the secondary menu)*/
+
+
+}
+
+section.menu_sub:nth-child(1) > header:nth-child(1){  /* menu_sub -> container div --->2nd header--> nav (the secondary menu)*/
+
+    background: linear-gradient(#fbfbfb 0%, #A79E85 100%);
+}
+
+header .BeforeScroll li a:hover{
+    background: linear-gradient(#fbfbfb 4%, #80796F 102%, #E38E57 3%);
+}
+
+header#sub_invisible nav a:hover{
+    background: linear-gradient(#F8F8F7 4%, RGBA(212, 208, 197, 0) 102%, #B9B29F 3%);
+}
+
+#expandSubMenu {
+    -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
+    background:-moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+    background:-webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+    background:-o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+    background:-ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+    background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9',GradientType=0);
+    background-color:#f9f9f9;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #dcdcdc;
+    display:inline-block;
+    cursor:pointer;
+    color:#666666;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+}
+#expandSubMenu:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
+    background:-moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+    background:-webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+    background:-o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+    background:-ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+    background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9',GradientType=0);
+    background-color:#e9e9e9;
+}
+#expandSubMenu:active {
+    position:relative;
+    top:1px;
+}
+
+.hidden{
+    display: none;
+    filter: opacity(0.0);
+}
+
+header nav li a:focus{
+    color: #FFA500;
+    border: 1,5px solid;
+    filter: blur(0px);
+    filter: opacity(100%);
+    text-shadow: -1px 1px 8px #F08800, 1px -1px 8px #FF2D00;
+ /* jovofelev.php-ból átvéve */
+}
