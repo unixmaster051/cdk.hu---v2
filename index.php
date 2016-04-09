@@ -59,6 +59,7 @@ EOT;
 <!--    <script type="text/javascript" src="--><?//= $_SERVER['DOCUMENT-ROOT']."/CDK/js" ?><!--/jquery-2.2.2.js"></script>-->
 
     <!-- --------------------------------------------SCRIPTEK ------------------------------------------------------>
+
     <script type="text/javascript">
         $(document).ready(function () {
             $(window).scroll(function () {
@@ -116,7 +117,7 @@ EOT;
     <script type="application/javascript">
         $(document).ready(function(){
            $('#expandSubMenu').click(function(){
-              $('#productWrapper').toggleClass('hidden');
+              $('#productWrapper').removeClass('hidden');
                $('#productWrapper').fadeTo('slow',1.0);
                console.log('document ready - ran @ expandSubMenuButtonClick2 -> now showing/hiding submenu #');
            });
@@ -201,7 +202,7 @@ EOT;
 		<div class="container">
 			<div class="logo pull-left animated wow fadeInLeft">
 				<!-- img src logó helye -->
-                <img src="<?=_DOCROOT?>/res/img/logo.png" width="250px" alt="Nem végeleges logó, csak teszt...">
+                <img src="<?=_tempPrefix?>/res/img/cdkLogo.png" width="150px" alt="Nem végeleges logó, csak teszt...">
 <!--				<p id="logo">Logó helye, még nem ez lesz a végleges</p>-->
 			</div>
 
@@ -313,18 +314,22 @@ EOT;
                     echo '<div class="grid-container" id="' . str_replace( $latinFindArray, $latinReplaceArray, strtolower( $productArray[ $i ] ) ) . '">';
                     echo <<<EOT
                      <ul class="rig columns" >
-                        <li class="block">
 EOT;
+                    $fi = new FilesystemIterator(__DIR__, FilesystemIterator::SKIP_DOTS);
+                    $fCount = iterator_count($fi);
+                        for($f = 0; $f < $fCount; $f ++){
+                            echo'<li class="block">';
                             echo '<img src = '._tempPrefix.'/images/'
                                  .str_replace( $latinFindArray, $latinReplaceArray,
                                     strtolower( $productArray[ $i ] ) )
-                                    .'/'
+                                 .'/'
                                  . str_replace( $latinFindArray, $latinReplaceArray,
                                     strtolower( $productArray[ $i ] ) )
-                                    .'_'.$i. '.jpg />';
+                                 .'_'.$f. '.jpg />';
                             echo '<span>' . $productArray[ $i ] . '</span>';
+                            echo '</li>';
+                        }
                             echo <<<EOT
-                        </li>
                     </ul>
                 </div>
 EOT;
@@ -507,11 +512,11 @@ EOT;
 	<section class="sub_box">
 		<p class="cta_text animated wow fadeInDown text-center">Írjon nekünk!</p>
         <p class="text-center">
-            CDK Kovács Róbert E. V.
-            3200 Gyöngyös, Bartók Béla u. 27.
-            Tel.,fax: 37/301-068
-            Mobil: 70/243-6020
-            E-mail: cdk@cdk.hu
+            CDK Kovács Róbert E. V. <br>
+            3200 Gyöngyös, Bartók Béla u. 27. <br>
+            Tel.,fax: 37/301-068<br>
+            Mobil: 70/243-6020<br>
+            E-mail: cdk@cdk.hu<br>
         </p>
 		<form action="javascript:void(0);" method="post" class="animated wow fadeIn" data-wow-duration="2s" id="submit_form">
 			<input type="email" id="mc-email" placeholder="Enter your email"/>
