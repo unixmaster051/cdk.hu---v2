@@ -147,9 +147,32 @@ EOT;
             });
         });
     </script>
+    <script type="application/javascript">
+        $("#pullDown").click(function() {
+            $('#pullDown').addClass('pressed');
+            $('html,body').animate(
+                {
+                    scrollTop:$(this).parent().next().offset().top
+                }, 'slow');
+        });
+    </script>
 
+    <script type="application/javascript">
+        $("#pullUp").click(function() {
+            $('#pullDown').addClass('pressed');
+            $('html,body').animate(
+                {
+                    scrollTop:$(this).parent().prev().offset().top
+                }, 'slow');
+        });
+    </script>
 
-
+<!------------------------------------------INCLUDES ------------------------------------------------------------------>
+    <script type="application/javascript" >
+        $(function)(){
+            $(".hero").load("<?=_tempPrefix?>/res/contextMenu.html");
+        });
+    </script>
     <!------------------------------------- KONFIGURÁCIÓ, PHP call ------------------------------------------------->
 
 <!--	 include_once($_SERVER['DOCUMENT-ROOT']._tempPrefix."/res/debugIncl.php")-->
@@ -170,7 +193,8 @@ EOT;
     "ü",
     "ű",
     " ",
-    ", "
+    ",",
+        "Ö","Ü","Ó","Ű","Ú"
     );
     $latinReplaceArray = array(
     "a",
@@ -183,23 +207,23 @@ EOT;
     "u",
     "u",
     "_",
-    "_"
+    "_",
+        "o","u","o","u","u"
     );
     $productArray = array(
         0 => "Standard méretű, fémkeretes kulcstartók",
-        1 => "Standard méretű, keret nélküli kulcstartók",
-        2 => "Egyedi méretű, keret nélküli kulcstartók",
-        3 => "Egyedi méretű, fémkeretes kulcstartók",
-        4=> "3D Betűk",
-        5=> "3D Matricák",
-        6=> "Öntött fém Kitűzők",
-        8 => "Öntött, festett fém kitűzők",
-        9=> "Láncok",
-        10=> "Műgyanta"
+        1 => "Egyedi méretű, keret nélküli kulcstartók",
+        2 => "Egyedi méretű, fémkeretes kulcstartók",
+        3=> "3D Betűk",
+        4=> "3D Matricák",
+        5=> "Öntött fém Kitűzők",
+        6 => "Öntött, festett fém kitűzők",
+        7=> "Láncok",
+        8=> "Műgyanta"
     );
     $n = sizeof($productArray);
 
-    $productTitlePrefix = "<div class='ProductTitle text-uppercase>";
+    $productTitlePrefix = '<div class="ProductTitle text-uppercase" >';
     $productTitleArray       = array(
         0 => $productTitlePrefix.
              'Kulcstartók'.
@@ -214,33 +238,30 @@ EOT;
                 EGYEDI MÉRETŰ 2 OLDALAS FÉM KERET NÉLKÜLI
                 3D MŰGYANTA BEVONATÚ KULCSTARTÓK
              </h3>',
-        2 => $productTitlePrefix.
-             'Kulcstartók'.
-             '</div>
-             <h3 class="text-uppercase">
-                EGYEDI MÉRETŰ 2 OLDALAS FÉM KERET NÉLKÜLI
-                3D MŰGYANTA BEVONATÚ KULCSTARTÓK
-             </h3>',
-        3 =>  $productTitlePrefix.
+        2 =>  $productTitlePrefix.
               'Kulcstartók'.
               '</div>
              <h3 class="text-uppercase">
                  EGYEDI MÉRETŰ FÉM KERETES KULCSTARTÓK
              </h3>',
-        4 => $productTitlePrefix.
+        3 => "3db",
+        4 => "3dm",
+        5 => $productTitlePrefix.
              'Kitűzők'.
              '</div>
              <h3 class="text-uppercase">
               ÖNTÖTT FÉM KITŰZŐK
              </h3>',
-        5 => $productTitlePrefix.
+        6 => $productTitlePrefix.
              'Kitűzők'.
              '</div>
              <h3 class="text-uppercase">
                 ÖNTÖTT, FESTETT FÉM KITŰZŐK
-             </h3>'
+             </h3>',
+        7 => "láncok",
+        8 => "műgyanta"
     );
-    $productDescriptionPrefix = "<div class='ProductDesc'>";
+    $productDescriptionPrefix = "<div class=\"ProductDesc\">";
     $productDescriptionArray = array(
         0 => $productDescriptionPrefix.
              'STANDARD MÉRETŰ KULCSTARTÓK MATRICÁINAK MÉRETEI:'.'<br>'.'<img src="" />'.
@@ -329,7 +350,12 @@ EOT;
 	<!--  Hero Section  -->
 	<section class="hero" id="hero">
         <a href="#" class="scrollToTop"></a>
-		<div class="container blur">
+      <span class="navToggles">
+        <input type="checkbox">
+             <label data-off="&#9724;" data-on="&#9654;"></label>
+         </span>
+
+        <div class="container blur">
 			<div class="caption caption-box">
 				<h1 class="text-uppercase  animated wow fadeInLeft">Kedves látogató! Üdvözlöm weblapomon!</h1>
 				<p class="text-primary animated wow fadeInLeft">
