@@ -180,8 +180,9 @@ a.app_store_btn{
 
 .hoverEnlarge img:hover {
     margin: -20px;
-    height: 170%;
-    z-index: 0;
+    height: 150%;
+    width:auto !important;
+    z-index: 1;
     position: relative;
     -webkit-transition: margin 0.4s, height 0.4s;
     -moz-transition: margin 0.4s, height 0.4s;
@@ -302,4 +303,36 @@ header nav li a:focus{
 
 .grid-container.active{
     display: block !important;
+}
+.grid-container span{
+    display:none;
+}
+
+.caption-box a {
+    margin-top: 105px;
+}
+.caption.caption-box {
+    background: rgba(255,255,255,0.6);
+    border-radius: 18px;
+    box-shadow: 0px 0px 10px .1px;
+    margin: 0px 0 0 41px;
+    padding: 40px 5px 15px 30px;
+    position: relative;
+    min-width: 890px;
+    min-height: 484px;
+}
+.hero .caption {
+    position: absolute;
+    max-width: 550px;
+    margin-left: 30px;
+    top: 50%;
+    transform: translate(0,-50%);
+    -webkit-transform: translate(0,-50%);
+    -moz-transform: translate(0,-50%);
+    -o-transform: translate(0,-50%);
+}
+
+.hero .caption p{
+    padding-top:inherit;
+
 }

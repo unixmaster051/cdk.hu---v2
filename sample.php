@@ -1,4 +1,5 @@
 <?php
+    require_once('/var/www/home/ws/cdk/public_html/new/res/config.php');
     ini_set('display_errors', 1);
     echo <<<EOT
 <!DOCTYPE html>
@@ -8,6 +9,13 @@
     <title></title>
 </head>
 <body>
+EOT;
+
+    require_once(_DOCROOT."/res/appendNode.php");
+
+    $c = new \tools\appendNode();
+    $f = $c -> main("idName");
+    echo <<<EOT
 It works now!
 </body>
 </html>

@@ -169,7 +169,8 @@ EOT;
     "ő",
     "ü",
     "ű",
-    " "
+    " ",
+    ", "
     );
     $latinReplaceArray = array(
     "a",
@@ -181,18 +182,107 @@ EOT;
     "o",
     "u",
     "u",
+    "_",
     "_"
     );
     $productArray = array(
-        0 => "Kulcstartók",
-        1=> "3D Betűk",
-        2=> "3D Matricák",
-        3=> "Kitűzők",
-        4=> "Láncok",
-        5=> "Műgyanta"
+        0 => "Standard méretű, fémkeretes kulcstartók",
+        1 => "Standard méretű, keret nélküli kulcstartók",
+        2 => "Egyedi méretű, keret nélküli kulcstartók",
+        3 => "Egyedi méretű, fémkeretes kulcstartók",
+        4=> "3D Betűk",
+        5=> "3D Matricák",
+        6=> "Öntött fém Kitűzők",
+        8 => "Öntött, festett fém kitűzők",
+        9=> "Láncok",
+        10=> "Műgyanta"
     );
     $n = sizeof($productArray);
-    ?>
+
+    $productTitlePrefix = "<div class='ProductTitle text-uppercase>";
+    $productTitleArray       = array(
+        0 => $productTitlePrefix.
+             'Kulcstartók'.
+             '</div>
+             <h3 class="text-uppercase">
+                 STANDARD MÉRETŰ 2 OLDALAS, NIKKELEZETT, FÉM KERETES,3D MŰGYANTA BEVONATÚ KULCSTARTÓK
+             </h3>',
+        1 => $productTitlePrefix.
+             'Kulcstartók'.
+             '</div>
+             <h3 class="text-uppercase">
+                EGYEDI MÉRETŰ 2 OLDALAS FÉM KERET NÉLKÜLI
+                3D MŰGYANTA BEVONATÚ KULCSTARTÓK
+             </h3>',
+        2 => $productTitlePrefix.
+             'Kulcstartók'.
+             '</div>
+             <h3 class="text-uppercase">
+                EGYEDI MÉRETŰ 2 OLDALAS FÉM KERET NÉLKÜLI
+                3D MŰGYANTA BEVONATÚ KULCSTARTÓK
+             </h3>',
+        3 =>  $productTitlePrefix.
+              'Kulcstartók'.
+              '</div>
+             <h3 class="text-uppercase">
+                 EGYEDI MÉRETŰ FÉM KERETES KULCSTARTÓK
+             </h3>',
+        4 => $productTitlePrefix.
+             'Kitűzők'.
+             '</div>
+             <h3 class="text-uppercase">
+              ÖNTÖTT FÉM KITŰZŐK
+             </h3>',
+        5 => $productTitlePrefix.
+             'Kitűzők'.
+             '</div>
+             <h3 class="text-uppercase">
+                ÖNTÖTT, FESTETT FÉM KITŰZŐK
+             </h3>'
+    );
+    $productDescriptionPrefix = "<div class='ProductDesc'>";
+    $productDescriptionArray = array(
+        0 => $productDescriptionPrefix.
+             'STANDARD MÉRETŰ KULCSTARTÓK MATRICÁINAK MÉRETEI:'.'<br>'.'<img src="" />'.
+             '<table>
+             </table>'.
+             'Ha a 2 oldalas kulcstartót kétféle grafikával kérik, akkor 10,- Ft felárat számítunk fel darabonként!
+            100 db-os mennyiség alatt 3.000.- beállási költséget számolunk fel.
+            Lehetőség van egyedi méretű kulcstartók elkészítésére is - kérje egyedi árajánlatunkat.' .
+             "</div>",
+        1 => $productDescriptionPrefix.
+             "Kérje egyedi árajánlatunkat.".
+             "</div>",
+        2 => $productDescriptionPrefix.
+             "Kérje egyedi árajánlatunkat".
+             "</div>",
+        3 =>$productDescriptionPrefix. "
+                Kérje egyedi árajánlatunkat.
+                <br>
+                <br>
+                <hr>
+                1. 25 mm-es sima karika lánccal: 24.-/db <br>
+                2. 25 mm-es hullámos karika forgóval: 29.-/db <br>
+                3. Mini karabíner lánccal: 30.-/db <br>
+                4. Médium karabíner lánccal: 35.-/db <br>
+                5. Maxi karabíner lánccal: 40.-/db <br>
+                6. Karabíneres kulcstartó lánccal: 49.-/db <br>
+                7. Karabíneres kulcstartó lánccal: 49.-/db <br>
+                2,5 mm-es golyós lánc: 360.-/fm  <br>
+                2,5 mm-es lánchoz összekötő szem: 13.-/db <br>
+                <br>
+                10.000 Ft-os megfendelés alatt 1.000 Ft csomagolási költséget számolunk fel!
+                Az árak nem tartalmazzák a 27%-os ÁFÁ-t!
+               ".
+            "</div>",
+        4 =>$productDescriptionPrefix.
+            "Kérje egyedi árajánlatunkat".
+            "</div>",
+        5 => $productDescriptionPrefix.
+             "Kérje egyedi árajánlatunkat.".
+             "</div>"
+    );
+?>
 
 </head>
 <body>
@@ -202,7 +292,7 @@ EOT;
 		<div class="container">
 			<div class="logo pull-left animated wow fadeInLeft">
 				<!-- img src logó helye -->
-                <img src="<?=_tempPrefix?>/res/img/cdkLogo.png" width="150px" alt="Nem végeleges logó, csak teszt...">
+                <img src="<?=_tempPrefix?>/res/img/cdkLogo.png" width="150px" alt="CDK.hu">
 <!--				<p id="logo">Logó helye, még nem ez lesz a végleges</p>-->
 			</div>
 
@@ -239,9 +329,9 @@ EOT;
 	<!--  Hero Section  -->
 	<section class="hero" id="hero">
         <a href="#" class="scrollToTop"></a>
-		<div class="container">
-			<div class="caption">
-				<h1 class="text-uppercase  animated wow fadeInLeft">Üdvözlöm weboldalunkon!</h1>
+		<div class="container blur">
+			<div class="caption caption-box">
+				<h1 class="text-uppercase  animated wow fadeInLeft">Kedves látogató! Üdvözlöm weblapomon!</h1>
 				<p class="text-primary animated wow fadeInLeft">
                     Egyéni vállalkozóként több mint 10 éve foglalkozunk a fenti termékek gyártásával,
                     illetve forgalmazásával. Kisvállalkozásként elsődleges célunk az ügyfelek gyors
@@ -258,7 +348,7 @@ EOT;
 					<i class="android_icon"></i>
 					<span>Ez is egy gomb linkkel</span>
 				</a>
-			</div>			
+			</div>
 		</div>
 	</section>
 	<!--  End Hero Section  -->
@@ -311,28 +401,29 @@ EOT;
 
                 /* ------------------------- imageWrapper generator ---------------- */
                 for ( $i = 0; $i < count( $productArray ); $i ++ ) {
-                    echo '<div class="grid-container" id="' . str_replace( $latinFindArray, $latinReplaceArray, strtolower( $productArray[ $i ] ) ) . '">';
+                    echo '<div class="grid-container " id="' . str_replace( $latinFindArray, $latinReplaceArray, strtolower( $productArray[ $i ] ) ) . '">';
+                    echo $productTitleArray[$i];
                     echo <<<EOT
                      <ul class="rig columns" >
 EOT;
-                    $fi = new FilesystemIterator(__DIR__, FilesystemIterator::SKIP_DOTS);
-                    $fCount = iterator_count($fi);
-                        for($f = 0; $f < $fCount; $f ++){
-                            echo'<li class="block">';
-                            echo '<img src = '._tempPrefix.'/images/'
-                                 .str_replace( $latinFindArray, $latinReplaceArray,
-                                    strtolower( $productArray[ $i ] ) )
-                                 .'/'
-                                 . str_replace( $latinFindArray, $latinReplaceArray,
-                                    strtolower( $productArray[ $i ] ) )
-                                 .'_'.$f. '.jpg />';
-                            echo '<span>' . $productArray[ $i ] . '</span>';
-                            echo '</li>';
-                        }
-                            echo <<<EOT
-                    </ul>
-                </div>
-EOT;
+                        $fi = new FilesystemIterator(__DIR__, FilesystemIterator::SKIP_DOTS);
+                        $fCount = iterator_count($fi);
+                            for($f = 0; $f < $fCount; $f ++){
+                                echo'<li class="block hoverEnlarge">';
+                                    echo '<img src = '._tempPrefix.'/images/'
+                                        .str_replace( $latinFindArray, $latinReplaceArray,
+                                            strtolower( $productArray[ $i ] ) )
+                                        .'/'
+//                                        . str_replace( $latinFindArray, $latinReplaceArray,
+//                                            strtolower( $productArray[ $i ] ) )
+//                                        .'_'
+                                         .$f. '.jpg />';
+                                     echo '<span>' . $productArray[ $i ] . '</span>';
+                                echo '</li>';
+                            }
+                        echo $productDescriptionArray[$i];
+                   echo '</ul>';
+                echo '</div>';
                 }
 
 
