@@ -14,7 +14,7 @@ EOT;
 		}
 		else define('_DEBUG', FALSE); //manual setting
 
-         require_once('/var/www/home/ws/cdk/public_html/new/res/config.php');
+         require_once('/var/www/home/ws/cdk/public_html/new/res/config.php'); //LET'S HARDCODE THIS EVERYWHERE
     ?>
 
 
