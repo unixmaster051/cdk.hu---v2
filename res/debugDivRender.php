@@ -1,5 +1,7 @@
 <?php
-    include_once($_SERVER['DOCUMENT_ROOT']."/CDK/ext_lib/debug.php");
+    require_once('/var/www/home/ws/cdk/public_html/new/res/config.php');
+
+    include_once($_SERVER['DOCUMENT_ROOT'].'/'._tempPrefix."/ext_lib/debug.php");
     function nestedCallDivPrint($text,$class)
     {
         $info = new main\debug();
