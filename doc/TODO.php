@@ -67,7 +67,7 @@
      * TODO: CODE CLEANUP - nem használt kódok, scriptek, function-ok törlése, kód egyszerűsítése, kommentelt részek átnézése/törlés ahol lehet
      * TODO: maradék tag-ek, propertyk, attrib-ok refactorozása
      * TODO: mergeCSS.php @ /res/  include error javítása
-     *
+     * TODO: null the _tempPrefix everywhere!
      *
      * ____________________________
      * MELLÉKES:

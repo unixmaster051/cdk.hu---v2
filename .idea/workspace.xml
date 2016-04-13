@@ -2,368 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e419b60-e58a-4ba5-9473-7679e67f3aec" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/3d_betuk/0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/3d_matricak/0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__femkeretes_kulcstartok/0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__keret_nelkuli_kulcstartok/0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kituzok/0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/lanc/0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/lancok/0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mugyanta/0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott__festett_fem_kituzok/0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott_fem_kituzok/0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/standard_meretu__femkeretes_kulcstartok/0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/3d_betuk/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/3d_matricak/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__femkeretes_kulcstartok/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__keret_nelkuli_kulcstartok/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kituzok/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/lanc/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/lancok/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mugyanta/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott__festett_fem_kituzok/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott_fem_kituzok/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/standard_meretu__femkeretes_kulcstartok/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__keret_nelkuli_kulcstartok/10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kituzok/10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mugyanta/10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott__festett_fem_kituzok/10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott_fem_kituzok/10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/standard_meretu__femkeretes_kulcstartok/10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__keret_nelkuli_kulcstartok/11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kituzok/11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mugyanta/11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott__festett_fem_kituzok/11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott_fem_kituzok/11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/standard_meretu__femkeretes_kulcstartok/11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__keret_nelkuli_kulcstartok/12.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kituzok/12.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/12.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mugyanta/12.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott__festett_fem_kituzok/12.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott_fem_kituzok/12.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/standard_meretu__femkeretes_kulcstartok/12.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__keret_nelkuli_kulcstartok/13.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kituzok/13.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/13.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott__festett_fem_kituzok/13.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott_fem_kituzok/13.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/standard_meretu__femkeretes_kulcstartok/13.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__keret_nelkuli_kulcstartok/14.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kituzok/14.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/14.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott__festett_fem_kituzok/14.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott_fem_kituzok/14.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/standard_meretu__femkeretes_kulcstartok/14.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__keret_nelkuli_kulcstartok/15.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kituzok/15.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/15.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott__festett_fem_kituzok/15.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott_fem_kituzok/15.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__keret_nelkuli_kulcstartok/16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kituzok/16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott__festett_fem_kituzok/16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott_fem_kituzok/16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__keret_nelkuli_kulcstartok/17.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kituzok/17.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/17.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott__festett_fem_kituzok/17.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott_fem_kituzok/17.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__keret_nelkuli_kulcstartok/18.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kituzok/18.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/18.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott__festett_fem_kituzok/18.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott_fem_kituzok/18.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__keret_nelkuli_kulcstartok/19.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kituzok/19.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/19.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott__festett_fem_kituzok/19.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott_fem_kituzok/19.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/196.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/3d_betuk/2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__femkeretes_kulcstartok/2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__keret_nelkuli_kulcstartok/2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kituzok/2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/lanc/2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mugyanta/2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott__festett_fem_kituzok/2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott_fem_kituzok/2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/standard_meretu__femkeretes_kulcstartok/2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__keret_nelkuli_kulcstartok/20.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kituzok/20.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/20.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott__festett_fem_kituzok/20.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott_fem_kituzok/20.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__keret_nelkuli_kulcstartok/21.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kituzok/21.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/21.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott__festett_fem_kituzok/21.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__keret_nelkuli_kulcstartok/22.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kituzok/22.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/22.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott__festett_fem_kituzok/22.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__keret_nelkuli_kulcstartok/23.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kituzok/23.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/23.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott__festett_fem_kituzok/23.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__keret_nelkuli_kulcstartok/24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kituzok/24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kituzok/25.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/25.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kituzok/26.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/26.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kituzok/27.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/27.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kituzok/28.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/28.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kituzok/29.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/29.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/3d_betuk/3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__femkeretes_kulcstartok/3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__keret_nelkuli_kulcstartok/3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kituzok/3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/lanc/3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mugyanta/3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott__festett_fem_kituzok/3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott_fem_kituzok/3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/standard_meretu__femkeretes_kulcstartok/3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kituzok/30.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/30.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/31.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/33.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/34.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/35.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/36.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/37.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/38.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/3d_betuk/4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__femkeretes_kulcstartok/4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__keret_nelkuli_kulcstartok/4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kituzok/4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/lanc/4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mugyanta/4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott__festett_fem_kituzok/4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott_fem_kituzok/4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/standard_meretu__femkeretes_kulcstartok/4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/3d_betuk/5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__femkeretes_kulcstartok/5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__keret_nelkuli_kulcstartok/5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kituzok/5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mugyanta/5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott__festett_fem_kituzok/5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott_fem_kituzok/5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/standard_meretu__femkeretes_kulcstartok/5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/3d_betuk/6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__femkeretes_kulcstartok/6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__keret_nelkuli_kulcstartok/6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kituzok/6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mugyanta/6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott__festett_fem_kituzok/6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott_fem_kituzok/6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/standard_meretu__femkeretes_kulcstartok/6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/3d_betuk/7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__femkeretes_kulcstartok/7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__keret_nelkuli_kulcstartok/7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kituzok/7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mugyanta/7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott__festett_fem_kituzok/7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott_fem_kituzok/7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/standard_meretu__femkeretes_kulcstartok/7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/3d_betuk/8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__femkeretes_kulcstartok/8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__keret_nelkuli_kulcstartok/8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kituzok/8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mugyanta/8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott__festett_fem_kituzok/8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott_fem_kituzok/8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/standard_meretu__femkeretes_kulcstartok/8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mugyanta/9.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__femkeretes_kulcstartok/9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/egyedi_meretu__keret_nelkuli_kulcstartok/9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kituzok/9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott__festett_fem_kituzok/9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ontott_fem_kituzok/9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/standard_meretu__femkeretes_kulcstartok/9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/from_pdf/qoplgpbz/Page-1-Image-42.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^0A32A8C482A3FDBAA28AB052FB5B090950DAE90A16AC40770F^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^0A32A8C482A3FDBAA28AB052FB5B090950DAE90A16AC40770F^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^0E087416D49E21DBC0BC83E73580FC07FF229B884ACD9BD2D7^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^0E087416D49E21DBC0BC83E73580FC07FF229B884ACD9BD2D7^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^11AA10BFD18F2067632060D482CB6615CA7A0486929F0B2724^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^11AA10BFD18F2067632060D482CB6615CA7A0486929F0B2724^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^2082C9332A1B81E5CDAA45B7006A130A6FFBD58BBA19C70BE7^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^2082C9332A1B81E5CDAA45B7006A130A6FFBD58BBA19C70BE7^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^3C6D5FFCFED4303EF834E5776F28B44D48C20415909F5EC0E2^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^3C6D5FFCFED4303EF834E5776F28B44D48C20415909F5EC0E2^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^401B0837A32BAC16A6B9DBE5636A3827440C090DD7F9B38AA3^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^401B0837A32BAC16A6B9DBE5636A3827440C090DD7F9B38AA3^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^5A8AD706B2EF6C8E991BA5804EC1126AFCD85E621A4F42C347^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^5A8AD706B2EF6C8E991BA5804EC1126AFCD85E621A4F42C347^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^5B41F209A4C1DBEF58F833200D09B2BEF593CDBFE36FA3BF74^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^5B41F209A4C1DBEF58F833200D09B2BEF593CDBFE36FA3BF74^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^5C806E65211DB1633C493EA863F3FC816CA4B202EFD59F7400^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^5C806E65211DB1633C493EA863F3FC816CA4B202EFD59F7400^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^6661F3CB9B41DBC6AD090ADFB9EB2A05ECB402F418B62F4F6B^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^6661F3CB9B41DBC6AD090ADFB9EB2A05ECB402F418B62F4F6B^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^6A32BC98A2CD45FE1687E3911E30778E36CA9A4247E5E599AF^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^6A32BC98A2CD45FE1687E3911E30778E36CA9A4247E5E599AF^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^6B95C1E8D3DF838CCAEA92AD03CE67558EE15D4455AFAD08C5^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^6B95C1E8D3DF838CCAEA92AD03CE67558EE15D4455AFAD08C5^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^6C8E6307F1D27DE20E1FB7BD7A6066A12BD992D02476607C2F^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^6C8E6307F1D27DE20E1FB7BD7A6066A12BD992D02476607C2F^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^797168D82652D97F5D9055EB3D2C7E4B130CA3507528C96460^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^80A9D27095BCA3ED6C7E1A8258FCB8BE0993564C62D29D9E01^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^80A9D27095BCA3ED6C7E1A8258FCB8BE0993564C62D29D9E01^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^8CA71B1FD74106458AAF36F97401C5D59D2055E394FFB96F56^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^8CA71B1FD74106458AAF36F97401C5D59D2055E394FFB96F56^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^A8200378C3188DDA680032F7BDCA1C0598660D1957D1959AD6^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^A8200378C3188DDA680032F7BDCA1C0598660D1957D1959AD6^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^AA7F757E579FA30008FFBAEB47A17A3471341C5A5B8CC66BCC^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^AA7F757E579FA30008FFBAEB47A17A3471341C5A5B8CC66BCC^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^AC19B5C5E34B4209E3C2BA96D1D31586B290E24CBE4BB6FA38^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^AC19B5C5E34B4209E3C2BA96D1D31586B290E24CBE4BB6FA38^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^AE08B6D6024147CE87CA8F7402F24687E925B2AA3B9E5DFC4F^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^AE08B6D6024147CE87CA8F7402F24687E925B2AA3B9E5DFC4F^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^BE9E2DAF373F08779A30580E413CE881F4862271B3D9CB1561^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^BE9E2DAF373F08779A30580E413CE881F4862271B3D9CB1561^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^C2951CD25CA5A39126293FD37CB57FABF1520737D5F2F8E8F2^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^C2951CD25CA5A39126293FD37CB57FABF1520737D5F2F8E8F2^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^C6B9734AF9581D28611550A2DD77F280D424542267A3C4C70A^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^C6B9734AF9581D28611550A2DD77F280D424542267A3C4C70A^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^C88EF84CC292D9D283E6FAC03D6A8D42C08E763BD95809A901^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^C88EF84CC292D9D283E6FAC03D6A8D42C08E763BD95809A901^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^CEEB47D486D70FF07F3620122C32B0589FC466EE9ADD951907^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^CEEB47D486D70FF07F3620122C32B0589FC466EE9ADD951907^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^D06E22C863A6A74F39C554498C70A76C349493026D550A186E^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^D06E22C863A6A74F39C554498C70A76C349493026D550A186E^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^D62E5A71AA3CDEA2F9F846E9D293BF3871D76A592DD150CE99^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^D62E5A71AA3CDEA2F9F846E9D293BF3871D76A592DD150CE99^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^D7D565C04720527C44535157080F5C1A7912729A1D5F79C0F5^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^D7D565C04720527C44535157080F5C1A7912729A1D5F79C0F5^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^D95B58D2644ED0178C30EE22D0742EADB77AC0B8982C64FA94^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^D95B58D2644ED0178C30EE22D0742EADB77AC0B8982C64FA94^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^D96B12C901BB8F263CEEFD90BF61F882BFDD302E4A465E4AA0^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^D96B12C901BB8F263CEEFD90BF61F882BFDD302E4A465E4AA0^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^DC48A9D3DFEA12B03C0C40360309F98A3A20D627F8DE26790B^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^DC48A9D3DFEA12B03C0C40360309F98A3A20D627F8DE26790B^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^DC670E6FC4D3F8D883AF223D0AF67CC33FFBCDF312AF3E16E5^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^DC670E6FC4D3F8D883AF223D0AF67CC33FFBCDF312AF3E16E5^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^DD92CA115696812331C594C7D39B3EE1CD115E5C4C9C58C937^tfile_urlpv.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^E05EA83D5868C7ED9E3E591B4A098A4D1D295D062D3506DF1D^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^E05EA83D5868C7ED9E3E591B4A098A4D1D295D062D3506DF1D^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^E6DE7E989E7FF25D397B04DDF58181B8DFDFED5D225EB02C08^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^E6DE7E989E7FF25D397B04DDF58181B8DFDFED5D225EB02C08^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/2/^F5A4A242D7444A41EBC6B5D2CBAEED9CA8C5867F7C96FADB24^pimgpsh_fullsize_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/1/^F5A4A242D7444A41EBC6B5D2CBAEED9CA8C5867F7C96FADB24^pimgpsh_thumbnail_win_distr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/agria.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/android_app.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/android_app_hover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/android_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/borkulcstarto.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hutomagnes/varosok/bp_szecheny_furdo_sorszamok.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/casino.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/cdkLogo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/cdkkulcs.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/cdkkulcstarok.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/citroen.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/close_video.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/f_icon1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/f_icon2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/f_icon3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/f_icon4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/f_icon5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/f_icon6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/facebook_logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/francia.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/google_logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/gyerekek.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/hero.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/icon1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/icon2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/icon3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/icon4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/icon5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/ios_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/iphone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/iphone_app.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/iphone_app_hover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/k&amp;v.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kamion.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/karabinerek.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hutomagnes/varosok/kerekegyhaza_sorszamok.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kf01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kf02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kf03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kf04.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kf05.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kf06.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kf07.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kf08.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kf09.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kf10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kf11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kf12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kf13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kf14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kf15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kf16.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kfn01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kfn02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kfn03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kfn04.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kfn05.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kfn06.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kfn07.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kfn08.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kfn09.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kfn10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kfn11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kfn12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kfn13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kfn14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kfn15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kfn16.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kfn17.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kfn18.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kfn19.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kfn20.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/kfn21.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/lanc1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/lanc2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/lanc3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/nav_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/nav_arrow_hover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/otp.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/pajzs.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/paypal_logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/petra.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/play.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/play_hover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/productWrapperDefault.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/rover.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/shy logo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/shy mester.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/sub_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/suzukiobuda.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/table.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/toyota.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/twitter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kulcstartok/3/vinyl grafik.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/windows_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/yahoo_logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/TODO.php" afterPath="$PROJECT_DIR$/doc/TODO.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/debugIncl.php" afterPath="$PROJECT_DIR$/res/debugIncl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CDK.hu - v2.iws" />
@@ -389,40 +30,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.974948" vertical-offset="3517" max-vertical-offset="12366">
-              <caret line="63" column="82" selection-start-line="63" selection-start-column="82" selection-end-line="63" selection-end-column="82" />
+            <state vertical-scroll-proportion="-2.5254238" vertical-offset="625" max-vertical-offset="12330">
+              <caret line="43" column="134" selection-start-line="43" selection-start-column="134" selection-end-line="43" selection-end-column="134" />
               <folding>
                 <element signature="tag#meta#1;tag#head#0;tag#html#0" expanded="true" />
                 <element signature="tag#meta#2;tag#head#0;tag#html#0" expanded="true" />
                 <element signature="tag#script#8;tag#head#0;tag#html#0" expanded="true" />
-                <element signature="e#4052#4514#0#HTML" expanded="true" />
-                <element signature="e#4095#4299#0#HTML" expanded="true" />
-                <element signature="e#4394#4501#0#HTML" expanded="true" />
+                <element signature="e#4016#4478#0#HTML" expanded="true" />
+                <element signature="e#4059#4263#0#HTML" expanded="true" />
+                <element signature="e#4358#4465#0#HTML" expanded="true" />
                 <element signature="tag#script#9;tag#head#0;tag#html#0" expanded="true" />
-                <element signature="e#4611#5017#0#HTML" expanded="true" />
-                <element signature="e#4729#5005#0#HTML" expanded="true" />
+                <element signature="e#4575#4981#0#HTML" expanded="true" />
+                <element signature="e#4693#4969#0#HTML" expanded="true" />
                 <element signature="tag#script#10;tag#head#0;tag#html#0" expanded="true" />
-                <element signature="e#5113#5277#0#HTML" expanded="true" />
+                <element signature="e#5077#5241#0#HTML" expanded="true" />
                 <element signature="tag#script#11;tag#head#0;tag#html#0" expanded="true" />
-                <element signature="e#5373#5678#0#HTML" expanded="true" />
-                <element signature="e#5421#5666#0#HTML" expanded="true" />
+                <element signature="e#5337#5642#0#HTML" expanded="true" />
+                <element signature="e#5385#5630#0#HTML" expanded="true" />
                 <element signature="tag#script#12;tag#head#0;tag#html#0" expanded="true" />
-                <element signature="e#5774#6139#0#HTML" expanded="true" />
-                <element signature="e#5823#6009#0#HTML" expanded="true" />
+                <element signature="e#5738#6103#0#HTML" expanded="true" />
+                <element signature="e#5787#5973#0#HTML" expanded="true" />
                 <element signature="tag#script#13;tag#head#0;tag#html#0" expanded="true" />
-                <element signature="e#6235#6536#0#HTML" expanded="true" />
-                <element signature="e#6284#6524#0#HTML" expanded="true" />
+                <element signature="e#6199#6500#0#HTML" expanded="true" />
+                <element signature="e#6248#6488#0#HTML" expanded="true" />
                 <element signature="tag#script#14;tag#head#0;tag#html#0" expanded="true" />
-                <element signature="e#6626#7361#0#HTML" expanded="true" />
-                <element signature="e#6686#7349#0#HTML" expanded="true" />
-                <element signature="e#7085#7232#0#HTML" expanded="true" />
+                <element signature="e#6590#7325#0#HTML" expanded="true" />
+                <element signature="e#6650#7313#0#HTML" expanded="true" />
+                <element signature="e#7049#7196#0#HTML" expanded="true" />
                 <element signature="tag#script#15;tag#head#0;tag#html#0" expanded="true" />
-                <element signature="e#7461#7669#0#HTML" expanded="true" />
+                <element signature="e#7425#7633#0#HTML" expanded="true" />
                 <element signature="tag#script#16;tag#head#0;tag#html#0" expanded="true" />
-                <element signature="e#7768#7976#0#HTML" expanded="true" />
+                <element signature="e#7732#7940#0#HTML" expanded="true" />
                 <element signature="tag#script#17;tag#head#0;tag#html#0" expanded="true" />
                 <element signature="tag#body#0;tag#html#0" expanded="true" />
                 <element signature="tag#header#0;tag#body#0;tag#html#0" expanded="true" />
@@ -507,11 +148,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="debugIncl.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/debugIncl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5419355" vertical-offset="0" max-vertical-offset="465">
+              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="TODO.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/doc/TODO.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1260" max-vertical-offset="1584">
-              <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+            <state vertical-scroll-proportion="-8.740741" vertical-offset="862" max-vertical-offset="1584">
+              <caret line="69" column="45" selection-start-line="69" selection-start-column="45" selection-end-line="69" selection-end-column="45" />
               <folding>
                 <element signature="e#272#322#0#PHP" expanded="true" />
               </folding>
@@ -670,8 +321,9 @@
         <option value="$PROJECT_DIR$/res/productsGrid.css" />
         <option value="$PROJECT_DIR$/res/products/css/cust.css" />
         <option value="$PROJECT_DIR$/res/contextMenu.html" />
-        <option value="$PROJECT_DIR$/doc/TODO.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/doc/TODO.php" />
+        <option value="$PROJECT_DIR$/res/debugIncl.php" />
       </list>
     </option>
   </component>
@@ -756,7 +408,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CDK.hu - v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CDK.hu - v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ext_lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -906,7 +572,13 @@
       <option name="project" value="LOCAL" />
       <updated>1460589616037</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="- unversioned állományok beiktatása verziókövető rendszerbe">
+      <created>1460589878476</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1460589878476</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -933,24 +605,24 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11904762" sideWeight="0.49727768" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25338754" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14929216" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25338754" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2208672" sideWeight="0.5315315" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14769648" sideWeight="0.5212355" order="11" side_tool="false" content_ui="tabs" x="807" y="657" width="550" height="103" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14905149" sideWeight="0.55984557" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24661246" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11904762" sideWeight="0.5027223" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25338754" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11904762" sideWeight="0.49727768" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14929216" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11904762" sideWeight="0.5027223" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14905149" sideWeight="0.55984557" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CSS Styles" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28184283" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -987,14 +659,15 @@
     <MESSAGE value="- ContextMenu.html hozzáadása (még nem működik) -js cmenüvel helyettesíti a reguláris contextmenüt&#10;- képek fájlneve -&gt; számozásra való módosítás&#10;-Elcsúszott menüpontindex jav.&#10;- replacearray nagy Ö, Ü, stb betűknél nem működött, --&gt;hardcoded" />
     <MESSAGE value="- TODO fájl tisztítása,, elkészült feladatok elől a todo kiszedése&#10;- fájlnevek refaktorálása, indexelés kezdete 0-tól, kiterjesztések módosítása mindenhol png-re&#10;- nem sorozatszám fájlnevű képek törlése, fleslges állomáynok törlése, sync&#10;- régebben megírt debugIncl.php használata, include módosítása require-re&#10;- debugDiv css használata _DEBUG konstans értékétől függően&#10;- filesystemIterator paramétere __DIR__ ről a jelenlegi mappára lesz módosítva, fsInit változóban a jelen mappa értéke.&#10;- imageGrid generator-ban a beágyazott kiterjesztés módosítása png-re&#10;-" />
     <MESSAGE value="- TODO fájl tisztítása,, elkészült feladatok elől a todo kiszedése&#10;- fájlnevek refaktorálása, indexelés kezdete 0-tól, kiterjesztések módosítása mindenhol png-re&#10;- nem sorozatszám fájlnevű képek törlése, fleslges állomáynok törlése, sync&#10;- régebben megírt debugIncl.php használata, include módosítása require-re&#10;- debugDiv css használata _DEBUG konstans értékétől függően&#10;- filesystemIterator paramétere __DIR__ ről a jelenlegi mappára lesz módosítva, fsInit változóban a jelen mappa értéke.&#10;- imageGrid generator-ban a beágyazott kiterjesztés módosítása png-re&#10;- előző commit nem sikerült, változott fájlok a fentilista szerint" />
-    <option name="LAST_COMMIT_MESSAGE" value="- TODO fájl tisztítása,, elkészült feladatok elől a todo kiszedése&#10;- fájlnevek refaktorálása, indexelés kezdete 0-tól, kiterjesztések módosítása mindenhol png-re&#10;- nem sorozatszám fájlnevű képek törlése, fleslges állomáynok törlése, sync&#10;- régebben megírt debugIncl.php használata, include módosítása require-re&#10;- debugDiv css használata _DEBUG konstans értékétől függően&#10;- filesystemIterator paramétere __DIR__ ről a jelenlegi mappára lesz módosítva, fsInit változóban a jelen mappa értéke.&#10;- imageGrid generator-ban a beágyazott kiterjesztés módosítása png-re&#10;- előző commit nem sikerült, változott fájlok a fentilista szerint" />
+    <MESSAGE value="- unversioned állományok beiktatása verziókövető rendszerbe" />
+    <option name="LAST_COMMIT_MESSAGE" value="- unversioned állományok beiktatása verziókövető rendszerbe" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/index.php</url>
-          <line>435</line>
+          <line>433</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
@@ -1203,13 +876,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/debugIncl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.3333335" vertical-offset="0" max-vertical-offset="360">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/smartMenus/css/sm-mint/sm-mint.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6948">
@@ -1390,16 +1056,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doc/TODO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1260" max-vertical-offset="1584">
-          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-          <folding>
-            <element signature="e#272#322#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hutomagnes/test/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.407408" vertical-offset="1969" max-vertical-offset="2538">
@@ -1412,47 +1068,47 @@
         <state vertical-scroll-proportion="-0.0" vertical-offset="702" max-vertical-offset="3168">
           <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
           <folding>
-            <element signature="e#25#43#0#PHP" expanded="true" />
-            <element signature="e#2780#2989#0#HTML" expanded="true" />
-            <element signature="e#2929#2983#0#HTML" expanded="true" />
-            <element signature="e#3072#3181#0#HTML" expanded="true" />
+            <element signature="e#25#43#0#PHP" expanded="false" />
+            <element signature="e#2780#2989#0#HTML" expanded="false" />
+            <element signature="e#2929#2983#0#HTML" expanded="false" />
+            <element signature="e#3072#3181#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.974948" vertical-offset="3517" max-vertical-offset="12366">
-          <caret line="63" column="82" selection-start-line="63" selection-start-column="82" selection-end-line="63" selection-end-column="82" />
+        <state vertical-scroll-proportion="-2.5254238" vertical-offset="625" max-vertical-offset="12330">
+          <caret line="43" column="134" selection-start-line="43" selection-start-column="134" selection-end-line="43" selection-end-column="134" />
           <folding>
             <element signature="tag#meta#1;tag#head#0;tag#html#0" expanded="true" />
             <element signature="tag#meta#2;tag#head#0;tag#html#0" expanded="true" />
             <element signature="tag#script#8;tag#head#0;tag#html#0" expanded="true" />
-            <element signature="e#4052#4514#0#HTML" expanded="true" />
-            <element signature="e#4095#4299#0#HTML" expanded="true" />
-            <element signature="e#4394#4501#0#HTML" expanded="true" />
+            <element signature="e#4016#4478#0#HTML" expanded="true" />
+            <element signature="e#4059#4263#0#HTML" expanded="true" />
+            <element signature="e#4358#4465#0#HTML" expanded="true" />
             <element signature="tag#script#9;tag#head#0;tag#html#0" expanded="true" />
-            <element signature="e#4611#5017#0#HTML" expanded="true" />
-            <element signature="e#4729#5005#0#HTML" expanded="true" />
+            <element signature="e#4575#4981#0#HTML" expanded="true" />
+            <element signature="e#4693#4969#0#HTML" expanded="true" />
             <element signature="tag#script#10;tag#head#0;tag#html#0" expanded="true" />
-            <element signature="e#5113#5277#0#HTML" expanded="true" />
+            <element signature="e#5077#5241#0#HTML" expanded="true" />
             <element signature="tag#script#11;tag#head#0;tag#html#0" expanded="true" />
-            <element signature="e#5373#5678#0#HTML" expanded="true" />
-            <element signature="e#5421#5666#0#HTML" expanded="true" />
+            <element signature="e#5337#5642#0#HTML" expanded="true" />
+            <element signature="e#5385#5630#0#HTML" expanded="true" />
             <element signature="tag#script#12;tag#head#0;tag#html#0" expanded="true" />
-            <element signature="e#5774#6139#0#HTML" expanded="true" />
-            <element signature="e#5823#6009#0#HTML" expanded="true" />
+            <element signature="e#5738#6103#0#HTML" expanded="true" />
+            <element signature="e#5787#5973#0#HTML" expanded="true" />
             <element signature="tag#script#13;tag#head#0;tag#html#0" expanded="true" />
-            <element signature="e#6235#6536#0#HTML" expanded="true" />
-            <element signature="e#6284#6524#0#HTML" expanded="true" />
+            <element signature="e#6199#6500#0#HTML" expanded="true" />
+            <element signature="e#6248#6488#0#HTML" expanded="true" />
             <element signature="tag#script#14;tag#head#0;tag#html#0" expanded="true" />
-            <element signature="e#6626#7361#0#HTML" expanded="true" />
-            <element signature="e#6686#7349#0#HTML" expanded="true" />
-            <element signature="e#7085#7232#0#HTML" expanded="true" />
+            <element signature="e#6590#7325#0#HTML" expanded="true" />
+            <element signature="e#6650#7313#0#HTML" expanded="true" />
+            <element signature="e#7049#7196#0#HTML" expanded="true" />
             <element signature="tag#script#15;tag#head#0;tag#html#0" expanded="true" />
-            <element signature="e#7461#7669#0#HTML" expanded="true" />
+            <element signature="e#7425#7633#0#HTML" expanded="true" />
             <element signature="tag#script#16;tag#head#0;tag#html#0" expanded="true" />
-            <element signature="e#7768#7976#0#HTML" expanded="true" />
+            <element signature="e#7732#7940#0#HTML" expanded="true" />
             <element signature="tag#script#17;tag#head#0;tag#html#0" expanded="true" />
             <element signature="tag#body#0;tag#html#0" expanded="true" />
             <element signature="tag#header#0;tag#body#0;tag#html#0" expanded="true" />
@@ -1533,6 +1189,24 @@
             <element signature="tag#li#1;tag#ul#0;tag#footer#0;tag#body#0;tag#html#0" expanded="true" />
             <element signature="tag#li#2;tag#ul#0;tag#footer#0;tag#body#0;tag#html#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/TODO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.740741" vertical-offset="862" max-vertical-offset="1584">
+          <caret line="69" column="45" selection-start-line="69" selection-start-column="45" selection-end-line="69" selection-end-column="45" />
+          <folding>
+            <element signature="e#272#322#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/debugIncl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5419355" vertical-offset="0" max-vertical-offset="465">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>

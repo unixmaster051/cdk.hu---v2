@@ -1,8 +1,8 @@
 <?php
     if(_DEBUG == TRUE){
-    echo('<link rel="stylesheet" href="'.$_SERVER["DOCUMENT_ROOT"].'/CDK/res/debugDivCust.css" type="text/css">');
-    include_once($_SERVER['DOCUMENT_ROOT']."/CDK/ext_lib/debug.php");
-    include_once($_SERVER['DOCUMENT_ROOT']."/CDK/res/debugDivRender.php");
+    echo('<link rel="stylesheet" href="'.$_SERVER["DOCUMENT_ROOT"]._tempPrefix.'/res/debugDivCust.css" type="text/css">');
+    include_once($_SERVER['DOCUMENT_ROOT']._tempPrefix."/ext_lib/debug.php");
+    include_once($_SERVER['DOCUMENT_ROOT']._tempPrefix."/res/debugDivRender.php");
 }
     /**
      * Created by PhpStorm.

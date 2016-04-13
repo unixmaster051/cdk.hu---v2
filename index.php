@@ -41,11 +41,9 @@ EOT;
     <link rel="stylesheet" type="text/css" href="<?= $_SERVER['DOCUMENT-ROOT']._tempPrefix ?>/res/productsGrid.css"/>
     <?
     if(_DEBUG == true){
-        echo '<link rel="stylesheet" href="'._tempPrefix.'/res/debugDivCust.css" type="text/css">';
+        echo '<!-- debug stylesheet is loaded: <link rel="stylesheet" href="'._tempPrefix.'/res/debugDivCust.css" type="text/css"> -->';
     }
     ?>
-    <link rel="stylesheet" href="res/debugDivCust.css" type="text/css">
-
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
