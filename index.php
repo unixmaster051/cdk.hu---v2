@@ -6,15 +6,15 @@
 
 		if(isset($_GET['debug'])){
 			define('_DEBUG',TRUE);
+            require_once('./res/debugIncl.php');
 			echo <<<EOT
 		<!-- Debug messages are ON. -->
+
 EOT;
 		}
 		else define('_DEBUG', FALSE); //manual setting
 
          require_once('/var/www/home/ws/cdk/public_html/new/res/config.php');
-
-
     ?>
 
 
@@ -39,6 +39,13 @@ EOT;
 	<link rel="stylesheet" type="text/css" href="<?= $_SERVER['DOCUMENT-ROOT']._tempPrefix ?>/res/products/css/animate.css"/>
 	<link rel="stylesheet" type="text/css" href="<?= $_SERVER['DOCUMENT-ROOT']._tempPrefix ?>/res/products/css/main.css"/> <!-- this this this! -->
     <link rel="stylesheet" type="text/css" href="<?= $_SERVER['DOCUMENT-ROOT']._tempPrefix ?>/res/productsGrid.css"/>
+    <?
+    if(_DEBUG == true){
+        echo '<link rel="stylesheet" href="'._tempPrefix.'/res/debugDivCust.css" type="text/css">';
+    }
+    ?>
+    <link rel="stylesheet" href="res/debugDivCust.css" type="text/css">
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -432,7 +439,9 @@ EOT;
                     echo <<<EOT
                      <ul class="rig columns" >
 EOT;
-                        $fi = new FilesystemIterator(__DIR__, FilesystemIterator::SKIP_DOTS);
+                        $fsInit = _tempPrefix.'/images/' .str_replace( $latinFindArray, $latinReplaceArray,strtolower( $productArray[ $i ] ) ) .'/';
+                       $fi = new FilesystemIterator(__DIR__, FilesystemIterator::SKIP_DOTS);
+                      nestedCallDivPrint($fsInit,'i');
                         $fCount = iterator_count($fi);
                             for($f = 0; $f < $fCount; $f ++){
                                 echo'<li class="block hoverEnlarge">';
@@ -443,7 +452,7 @@ EOT;
 //                                        . str_replace( $latinFindArray, $latinReplaceArray,
 //                                            strtolower( $productArray[ $i ] ) )
 //                                        .'_'
-                                         .$f. '.jpg />';
+                                         .$f. '.png />';
                                      echo '<span>' . $productArray[ $i ] . '</span>';
                                 echo '</li>';
                             }
