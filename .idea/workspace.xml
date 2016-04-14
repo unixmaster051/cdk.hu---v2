@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e419b60-e58a-4ba5-9473-7679e67f3aec" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/debugDivRender.php" afterPath="$PROJECT_DIR$/res/debugDivRender.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/TODO.php" afterPath="$PROJECT_DIR$/doc/TODO.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/debugIncl.php" afterPath="$PROJECT_DIR$/res/debugIncl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CDK.hu - v2.iws" />
@@ -28,42 +30,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.881356" vertical-offset="0" max-vertical-offset="12330">
-              <caret line="16" column="110" selection-start-line="16" selection-start-column="110" selection-end-line="16" selection-end-column="110" />
+            <state vertical-scroll-proportion="0.42920354" vertical-offset="7852" max-vertical-offset="12438">
+              <caret line="447" column="16" selection-start-line="447" selection-start-column="16" selection-end-line="447" selection-end-column="16" />
               <folding>
+                <element signature="tag#head#0;tag#html#0" expanded="true" />
                 <element signature="tag#meta#1;tag#head#0;tag#html#0" expanded="true" />
                 <element signature="tag#meta#2;tag#head#0;tag#html#0" expanded="true" />
                 <element signature="tag#script#8;tag#head#0;tag#html#0" expanded="true" />
-                <element signature="e#4049#4511#0#HTML" expanded="true" />
-                <element signature="e#4092#4296#0#HTML" expanded="true" />
-                <element signature="e#4391#4498#0#HTML" expanded="true" />
+                <element signature="e#4141#4603#0#HTML" expanded="true" />
+                <element signature="e#4184#4388#0#HTML" expanded="true" />
+                <element signature="e#4483#4590#0#HTML" expanded="true" />
                 <element signature="tag#script#9;tag#head#0;tag#html#0" expanded="true" />
-                <element signature="e#4608#5014#0#HTML" expanded="true" />
-                <element signature="e#4726#5002#0#HTML" expanded="true" />
+                <element signature="e#4700#5106#0#HTML" expanded="true" />
+                <element signature="e#4818#5094#0#HTML" expanded="true" />
                 <element signature="tag#script#10;tag#head#0;tag#html#0" expanded="true" />
-                <element signature="e#5110#5274#0#HTML" expanded="true" />
+                <element signature="e#5202#5366#0#HTML" expanded="true" />
                 <element signature="tag#script#11;tag#head#0;tag#html#0" expanded="true" />
-                <element signature="e#5370#5675#0#HTML" expanded="true" />
-                <element signature="e#5418#5663#0#HTML" expanded="true" />
+                <element signature="e#5462#5767#0#HTML" expanded="true" />
+                <element signature="e#5510#5755#0#HTML" expanded="true" />
                 <element signature="tag#script#12;tag#head#0;tag#html#0" expanded="true" />
-                <element signature="e#5771#6136#0#HTML" expanded="true" />
-                <element signature="e#5820#6006#0#HTML" expanded="true" />
+                <element signature="e#5863#6228#0#HTML" expanded="true" />
+                <element signature="e#5912#6098#0#HTML" expanded="true" />
                 <element signature="tag#script#13;tag#head#0;tag#html#0" expanded="true" />
-                <element signature="e#6232#6533#0#HTML" expanded="true" />
-                <element signature="e#6281#6521#0#HTML" expanded="true" />
+                <element signature="e#6324#6625#0#HTML" expanded="true" />
+                <element signature="e#6373#6613#0#HTML" expanded="true" />
                 <element signature="tag#script#14;tag#head#0;tag#html#0" expanded="true" />
-                <element signature="e#6623#7358#0#HTML" expanded="true" />
-                <element signature="e#6683#7346#0#HTML" expanded="true" />
-                <element signature="e#7082#7229#0#HTML" expanded="true" />
+                <element signature="e#6715#7450#0#HTML" expanded="true" />
+                <element signature="e#6775#7438#0#HTML" expanded="true" />
+                <element signature="e#7174#7321#0#HTML" expanded="true" />
                 <element signature="tag#script#15;tag#head#0;tag#html#0" expanded="true" />
-                <element signature="e#7458#7666#0#HTML" expanded="true" />
+                <element signature="e#7550#7758#0#HTML" expanded="true" />
                 <element signature="tag#script#16;tag#head#0;tag#html#0" expanded="true" />
-                <element signature="e#7765#7973#0#HTML" expanded="true" />
+                <element signature="e#7857#8065#0#HTML" expanded="true" />
                 <element signature="tag#script#17;tag#head#0;tag#html#0" expanded="true" />
-                <element signature="tag#body#0;tag#html#0" expanded="true" />
                 <element signature="tag#header#0;tag#body#0;tag#html#0" expanded="true" />
                 <element signature="tag#div#0;tag#header#0;tag#body#0;tag#html#0" expanded="true" />
                 <element signature="tag#div#0;tag#div#0;tag#header#0;tag#body#0;tag#html#0" expanded="true" />
@@ -79,14 +81,12 @@
                 <element signature="tag#p#0;tag#div#0;tag#div#0;tag#section#0;tag#body#0;tag#html#0" expanded="true" />
                 <element signature="tag#a#0;tag#div#0;tag#div#0;tag#section#0;tag#body#0;tag#html#0" expanded="true" />
                 <element signature="tag#a#1;tag#div#0;tag#div#0;tag#section#0;tag#body#0;tag#html#0" expanded="true" />
-                <element signature="tag#section#1;tag#body#0;tag#html#0" expanded="true" />
                 <element signature="tag#section#0;tag#section#1;tag#body#0;tag#html#0" expanded="true" />
                 <element signature="tag#header#0;tag#section#0;tag#section#1;tag#body#0;tag#html#0" expanded="true" />
                 <element signature="tag#div#0;tag#header#0;tag#section#0;tag#section#1;tag#body#0;tag#html#0" expanded="true" />
                 <element signature="tag#nav#0;tag#div#0;tag#header#0;tag#section#0;tag#section#1;tag#body#0;tag#html#0" expanded="true" />
                 <element signature="tag#ul#0;tag#nav#0;tag#div#0;tag#header#0;tag#section#0;tag#section#1;tag#body#0;tag#html#0" expanded="true" />
                 <element signature="tag#li#0;tag#ul#0;tag#nav#0;tag#div#0;tag#header#0;tag#section#0;tag#section#1;tag#body#0;tag#html#0" expanded="true" />
-                <element signature="tag#div#1;tag#section#1;tag#body#0;tag#html#0" expanded="true" />
                 <element signature="tag#div#0;tag#div#1;tag#section#1;tag#body#0;tag#html#0" expanded="true" />
                 <element signature="tag#ul#0;tag#div#0;tag#div#1;tag#section#1;tag#body#0;tag#html#0" expanded="true" />
                 <element signature="tag#li#0;tag#ul#0;tag#div#0;tag#div#1;tag#section#1;tag#body#0;tag#html#0" expanded="true" />
@@ -149,18 +149,18 @@
       <file leaf-file-name="debugIncl.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/debugIncl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="396">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="396">
+              <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="debugDivRender.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="debugDivRender.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/debugDivRender.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.077419356" vertical-offset="0" max-vertical-offset="558">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state vertical-scroll-proportion="-14.0" vertical-offset="0" max-vertical-offset="558">
+              <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -169,8 +169,8 @@
       <file leaf-file-name="TODO.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/doc/TODO.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.740741" vertical-offset="862" max-vertical-offset="1584">
-              <caret line="69" column="45" selection-start-line="69" selection-start-column="45" selection-end-line="69" selection-end-column="45" />
+            <state vertical-scroll-proportion="-7.4074073" vertical-offset="268" max-vertical-offset="1584">
+              <caret line="34" column="85" selection-start-line="34" selection-start-column="85" selection-end-line="34" selection-end-column="85" />
               <folding>
                 <element signature="e#272#322#0#PHP" expanded="true" />
               </folding>
@@ -328,10 +328,10 @@
         <option value="$PROJECT_DIR$/res/productsGrid.css" />
         <option value="$PROJECT_DIR$/res/products/css/cust.css" />
         <option value="$PROJECT_DIR$/res/contextMenu.html" />
-        <option value="$PROJECT_DIR$/doc/TODO.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/res/debugIncl.php" />
         <option value="$PROJECT_DIR$/res/debugDivRender.php" />
+        <option value="$PROJECT_DIR$/res/debugIncl.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/doc/TODO.php" />
       </list>
     </option>
   </component>
@@ -598,7 +598,13 @@
       <option name="project" value="LOCAL" />
       <updated>1460590780061</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="- hardcoded @ debugDivRender          require_once('/var/www/home/ws/cdk/public_html/new/res/config.php');&#10;hope that fucker will finally work">
+      <created>1460590875749</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1460590875749</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -682,14 +688,15 @@
     <MESSAGE value="- unversioned állományok beiktatása verziókövető rendszerbe" />
     <MESSAGE value="- TODO frissítése&#10;- debugincl-hez temp prefixumok hozzáadása&#10;- hiányzó debug.php letöltése régi szerverről&#10;- duplikált stíluslap ref. törlése (debugincl.php ben már kiechózta)" />
     <MESSAGE value="- hardcoded @ debugincl          require_once('/var/www/home/ws/cdk/public_html/new/res/config.php');&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="- hardcoded @ debugincl          require_once('/var/www/home/ws/cdk/public_html/new/res/config.php');&#10;" />
+    <MESSAGE value="- hardcoded @ debugDivRender          require_once('/var/www/home/ws/cdk/public_html/new/res/config.php');&#10;hope that fucker will finally work" />
+    <option name="LAST_COMMIT_MESSAGE" value="- hardcoded @ debugDivRender          require_once('/var/www/home/ws/cdk/public_html/new/res/config.php');&#10;hope that fucker will finally work" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/index.php</url>
-          <line>433</line>
+          <line>439</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
@@ -1091,10 +1098,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/debugDivRender.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.0" vertical-offset="0" max-vertical-offset="558">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/debugIncl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="396">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/doc/TODO.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.740741" vertical-offset="862" max-vertical-offset="1584">
-          <caret line="69" column="45" selection-start-line="69" selection-start-column="45" selection-end-line="69" selection-end-column="45" />
+        <state vertical-scroll-proportion="-7.4074073" vertical-offset="268" max-vertical-offset="1584">
+          <caret line="34" column="85" selection-start-line="34" selection-start-column="85" selection-end-line="34" selection-end-column="85" />
           <folding>
             <element signature="e#272#322#0#PHP" expanded="true" />
           </folding>
@@ -1103,39 +1126,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.881356" vertical-offset="0" max-vertical-offset="12330">
-          <caret line="16" column="110" selection-start-line="16" selection-start-column="110" selection-end-line="16" selection-end-column="110" />
+        <state vertical-scroll-proportion="0.42920354" vertical-offset="7852" max-vertical-offset="12438">
+          <caret line="447" column="16" selection-start-line="447" selection-start-column="16" selection-end-line="447" selection-end-column="16" />
           <folding>
+            <element signature="tag#head#0;tag#html#0" expanded="true" />
             <element signature="tag#meta#1;tag#head#0;tag#html#0" expanded="true" />
             <element signature="tag#meta#2;tag#head#0;tag#html#0" expanded="true" />
             <element signature="tag#script#8;tag#head#0;tag#html#0" expanded="true" />
-            <element signature="e#4049#4511#0#HTML" expanded="true" />
-            <element signature="e#4092#4296#0#HTML" expanded="true" />
-            <element signature="e#4391#4498#0#HTML" expanded="true" />
+            <element signature="e#4141#4603#0#HTML" expanded="true" />
+            <element signature="e#4184#4388#0#HTML" expanded="true" />
+            <element signature="e#4483#4590#0#HTML" expanded="true" />
             <element signature="tag#script#9;tag#head#0;tag#html#0" expanded="true" />
-            <element signature="e#4608#5014#0#HTML" expanded="true" />
-            <element signature="e#4726#5002#0#HTML" expanded="true" />
+            <element signature="e#4700#5106#0#HTML" expanded="true" />
+            <element signature="e#4818#5094#0#HTML" expanded="true" />
             <element signature="tag#script#10;tag#head#0;tag#html#0" expanded="true" />
-            <element signature="e#5110#5274#0#HTML" expanded="true" />
+            <element signature="e#5202#5366#0#HTML" expanded="true" />
             <element signature="tag#script#11;tag#head#0;tag#html#0" expanded="true" />
-            <element signature="e#5370#5675#0#HTML" expanded="true" />
-            <element signature="e#5418#5663#0#HTML" expanded="true" />
+            <element signature="e#5462#5767#0#HTML" expanded="true" />
+            <element signature="e#5510#5755#0#HTML" expanded="true" />
             <element signature="tag#script#12;tag#head#0;tag#html#0" expanded="true" />
-            <element signature="e#5771#6136#0#HTML" expanded="true" />
-            <element signature="e#5820#6006#0#HTML" expanded="true" />
+            <element signature="e#5863#6228#0#HTML" expanded="true" />
+            <element signature="e#5912#6098#0#HTML" expanded="true" />
             <element signature="tag#script#13;tag#head#0;tag#html#0" expanded="true" />
-            <element signature="e#6232#6533#0#HTML" expanded="true" />
-            <element signature="e#6281#6521#0#HTML" expanded="true" />
+            <element signature="e#6324#6625#0#HTML" expanded="true" />
+            <element signature="e#6373#6613#0#HTML" expanded="true" />
             <element signature="tag#script#14;tag#head#0;tag#html#0" expanded="true" />
-            <element signature="e#6623#7358#0#HTML" expanded="true" />
-            <element signature="e#6683#7346#0#HTML" expanded="true" />
-            <element signature="e#7082#7229#0#HTML" expanded="true" />
+            <element signature="e#6715#7450#0#HTML" expanded="true" />
+            <element signature="e#6775#7438#0#HTML" expanded="true" />
+            <element signature="e#7174#7321#0#HTML" expanded="true" />
             <element signature="tag#script#15;tag#head#0;tag#html#0" expanded="true" />
-            <element signature="e#7458#7666#0#HTML" expanded="true" />
+            <element signature="e#7550#7758#0#HTML" expanded="true" />
             <element signature="tag#script#16;tag#head#0;tag#html#0" expanded="true" />
-            <element signature="e#7765#7973#0#HTML" expanded="true" />
+            <element signature="e#7857#8065#0#HTML" expanded="true" />
             <element signature="tag#script#17;tag#head#0;tag#html#0" expanded="true" />
-            <element signature="tag#body#0;tag#html#0" expanded="true" />
             <element signature="tag#header#0;tag#body#0;tag#html#0" expanded="true" />
             <element signature="tag#div#0;tag#header#0;tag#body#0;tag#html#0" expanded="true" />
             <element signature="tag#div#0;tag#div#0;tag#header#0;tag#body#0;tag#html#0" expanded="true" />
@@ -1151,14 +1174,12 @@
             <element signature="tag#p#0;tag#div#0;tag#div#0;tag#section#0;tag#body#0;tag#html#0" expanded="true" />
             <element signature="tag#a#0;tag#div#0;tag#div#0;tag#section#0;tag#body#0;tag#html#0" expanded="true" />
             <element signature="tag#a#1;tag#div#0;tag#div#0;tag#section#0;tag#body#0;tag#html#0" expanded="true" />
-            <element signature="tag#section#1;tag#body#0;tag#html#0" expanded="true" />
             <element signature="tag#section#0;tag#section#1;tag#body#0;tag#html#0" expanded="true" />
             <element signature="tag#header#0;tag#section#0;tag#section#1;tag#body#0;tag#html#0" expanded="true" />
             <element signature="tag#div#0;tag#header#0;tag#section#0;tag#section#1;tag#body#0;tag#html#0" expanded="true" />
             <element signature="tag#nav#0;tag#div#0;tag#header#0;tag#section#0;tag#section#1;tag#body#0;tag#html#0" expanded="true" />
             <element signature="tag#ul#0;tag#nav#0;tag#div#0;tag#header#0;tag#section#0;tag#section#1;tag#body#0;tag#html#0" expanded="true" />
             <element signature="tag#li#0;tag#ul#0;tag#nav#0;tag#div#0;tag#header#0;tag#section#0;tag#section#1;tag#body#0;tag#html#0" expanded="true" />
-            <element signature="tag#div#1;tag#section#1;tag#body#0;tag#html#0" expanded="true" />
             <element signature="tag#div#0;tag#div#1;tag#section#1;tag#body#0;tag#html#0" expanded="true" />
             <element signature="tag#ul#0;tag#div#0;tag#div#1;tag#section#1;tag#body#0;tag#html#0" expanded="true" />
             <element signature="tag#li#0;tag#ul#0;tag#div#0;tag#div#1;tag#section#1;tag#body#0;tag#html#0" expanded="true" />
@@ -1214,22 +1235,6 @@
             <element signature="tag#li#1;tag#ul#0;tag#footer#0;tag#body#0;tag#html#0" expanded="true" />
             <element signature="tag#li#2;tag#ul#0;tag#footer#0;tag#body#0;tag#html#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/debugIncl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="396">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/debugDivRender.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.077419356" vertical-offset="0" max-vertical-offset="558">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

@@ -12,7 +12,13 @@
 
 EOT;
 		}
-		else define('_DEBUG', FALSE); //manual setting
+		else{
+            define('_DEBUG', FALSE);
+            echo <<<EOT
+		<!-- Debug messages are now OFF. -->
+
+EOT;
+        } //manual setting
 
          require_once('/var/www/home/ws/cdk/public_html/new/res/config.php'); //LET'S HARDCODE THIS EVERYWHERE
     ?>
@@ -437,9 +443,9 @@ EOT;
                     echo <<<EOT
                      <ul class="rig columns" >
 EOT;
-                        $fsInit = _tempPrefix.'/images/' .str_replace( $latinFindArray, $latinReplaceArray,strtolower( $productArray[ $i ] ) ) .'/';
-                       $fi = new FilesystemIterator(__DIR__, FilesystemIterator::SKIP_DOTS);
-                      nestedCallDivPrint($fsInit,'i');
+                        $fsInit = _DOCROOT._tempPrefix.'/images/' .str_replace( $latinFindArray, $latinReplaceArray,strtolower( $productArray[ $i ] ) ) .'/';
+                       $fi = new FilesystemIterator($fsInit, FilesystemIterator::SKIP_DOTS);
+                 if(_DEBUG) nestedCallDivPrint($fsInit,'i');
                         $fCount = iterator_count($fi);
                             for($f = 0; $f < $fCount; $f ++){
                                 echo'<li class="block hoverEnlarge">';
