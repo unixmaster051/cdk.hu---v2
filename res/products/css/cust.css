@@ -92,7 +92,7 @@ header .burger_icon.active {
 
 .about {
 
-    background-image: -moz-linear-gradient(bottom, #e0590f 0%, #b9480a 0.27%, #5a2811 99.46%, #5a3811 100%);
+    /*background-image: -moz-linear-gradient(bottom, #e0590f 0%, #b9480a 0.27%, #5a2811 99.46%, #5a3811 100%);*/
 }
 
 .sub_box{
@@ -234,7 +234,7 @@ section.menu_sub:nth-child(1) > header:nth-child(1){  /* menu_sub -> container d
 
    /*background: linear-gradient(#fbfbfb 0%, #A79E85 100%);*/
 
-    background: linear-gradient(#fbfbfb 0%, RGBA(167, 158, 133, 0.67) 100%);
+    /*background: linear-gradient(#fbfbfb 0%, RGBA(167, 158, 133, 0.67) 100%);*/ /* TODO:!!!!!! */
 }
 
 header .BeforeScroll li a:hover{
@@ -288,7 +288,7 @@ header#sub_invisible nav a:hover{
 
 .hidden{
     display: none;
-    filter: opacity(0.0);
+
 }
 
 header nav li a:focus{
@@ -346,7 +346,7 @@ nav.pull-left:nth-child(1){
 }
 
 .menu_sub li{
-    margin-bottom: 35px;
+    margin-bottom: 41px;
 }
 
 .navToggles {
@@ -486,15 +486,134 @@ nav.pull-left:nth-child(1){
     z-index:4;
 }
 
-/*#pullUp{*/
-    /*height: 46px;*/
-/*}*/
-/*#pullDown{*/
-    /*height: 48px;*/
-    /*position: relative;*/
-    /*margin-block-start: 36px;*/
-    /*margin: inherit 0 inherit 0;*/
-    /*width: 132%;*/
-    /*margin-left: 0;*/
-    /*left: -7px;*/
-/*}*/
+/*
+#pullUp{
+    height: 46px;
+}
+#pullDown{
+    height: 48px;
+    position: relative;
+    margin-block-start: 36px;
+    margin: inherit 0 inherit 0;
+    width: 132%;
+    margin-left: 0;
+    left: -7px;
+}
+*/
+
+.hero{
+background: url('/new/images/productWrapperDefault.png'); !important;
+}
+
+header#sub_invisible.BeforeScroll.AfterScroll{
+
+    /*min-height: 180px;*/
+
+}
+
+
+header nav a {
+    margin-top: 50px;
+    font: bold 11px Arial;
+    text-decoration: none;
+    color: #333333;
+    padding-top: 48px;
+    padding-right: 10px;
+    padding-bottom: 57px;
+    padding-left: 10px;
+}
+
+.container {
+    max-width: 1410px;
+
+    width: 1410px;
+}
+
+a.isMenuItem{
+    padding-top: 14px;
+    padding-right: 10px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+}
+
+.ProductTitle{
+    font-family: helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-variant: small-caps;
+    letter-spacing: -0.4pt;
+    margin: 10px 0 10px 0;
+}
+
+.ProductDesc{
+    position: relative;
+    font-family: "Tahoma","Geneva",sans-serif;
+    font-size: 14px;
+    letter-spacing: -0.4pt;
+    float: left;
+    margin-block-start:150px;
+    margin-inline-start: 100px;
+}
+
+.isBlurred{
+    filter: blur(4px);
+    position: absolute;
+}
+.isHighlighted{
+    border-radius: 22px; !important;
+    box-shadow: 0px 0px 15px .6px; !important;
+    filter: blur(0);
+    position:absolute;
+
+
+}
+
+.popout {
+
+}
+
+.jTooltip {
+    position: absolute;
+    height: 2em;
+    width: 100%;
+    background-color: #fafafa;
+    color: #444;
+    display: none;
+    border-radius: 4px;
+    left: 0;
+    top: -3em;
+    padding-top: .5em;
+    box-sizing: border-box;
+}
+.jTooltip::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 45%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: #fafafa transparent transparent 		transparent;
+}
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#aabcfe;margin:0px auto;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#669;background-color:#e8edff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#039;background-color:#b9c9fe;}
+.tg .tg-yw4l{vertical-align:top}
+@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}
+
+.header{
+    background: linear-gradient(rgba(255, 189, 75, 0.9) 0%, #CF5000 100%);
+}
+.about,#about{
+        background: linear-gradient(rgb(255, 162, 0) 0%, #CF5000 100%)
+}
+.aboutUs{
+    position: relative;
+    font-family: "Tahoma","Geneva",sans-serif;
+    font-size: 14px;
+    letter-spacing: -0.4pt;
+    float: left;
+    margin-block-start: 150px;
+    margin-inline-start: 100px;
+}

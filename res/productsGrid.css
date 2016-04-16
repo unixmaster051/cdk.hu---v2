@@ -12,13 +12,16 @@
     clear: both;
 }
 .grid-container ul .block {
-    width: 16% !important;
+    width: 25% !important;
     height: auto;
     position: relative;
     float: left;
     margin: 0 0 0 0;
     padding: 0 0 20% 0;
     transition: 0.8s ease;
+    max-width: 15%;
+    max-height: 15%;
+
 }
 .grid-container ul .block:hover span {
     height: 50%;

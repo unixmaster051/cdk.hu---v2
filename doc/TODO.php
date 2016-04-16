@@ -15,7 +15,8 @@
     * ------------------------------ */
     /*
      * TODO: background: linear-gradient(rgba(252, 162, 5, 0.9) 0%, #F27C32 100%);
-     * TODO: főoldal több kulcstartós halom háttérnek , opacity -vel halványítás
+    * background: linear-gradient(rgba(255, 189, 75, 0.9) 0%, #CF5000 100%);
+    * TODO: főoldal több kulcstartós halom háttérnek , opacity -vel halványítás
      *       a banner nem jó már, a cd helyett valami más kell (kép csere)
      *       új vektoros cdk logó használata (SVG)
      *       új képekkel munka

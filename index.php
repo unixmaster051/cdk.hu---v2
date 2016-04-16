@@ -149,34 +149,54 @@ EOT;
                 $('#productWrapperDefault').removeClass('active');
                 $('.grid-container').fadeOut(500,function(){
                     $('#' + $gridID).fadeIn(500);
-                    console.log('this='+$(this)+',current gridID='+$gridID);
+                    console.log('this='+$(this).val()+',current gridID='+$gridID);
 
                 });
                 $('.isMenuItem').removeClass("active");
+//                $('.ProductTitle,.ProductDesc').addClass('hidden');
                 $(this).addClass("active");
-
+//                $('.ProductTitle,.ProductDesc').addClass('hidden');
+//                $('.ProductTitle#'+$gridID).removeClass('hidden');
+//                $('.ProductDesc#'+$gridID).removeClass('hidden');
             });
         });
     </script>
     <script type="application/javascript">
         $("#pullDown").click(function() {
-            $('#pullDown').addClass('pressed');
+            $('#pullDown').addClass('pressed');1
             $('html,body').animate(
                 {
                     scrollTop:$(this).parent().next().offset().top
                 }, 'slow');
         });
     </script>
-
     <script type="application/javascript">
-        $("#pullUp").click(function() {
-            $('#pullDown').addClass('pressed');
-            $('html,body').animate(
-                {
-                    scrollTop:$(this).parent().prev().offset().top
-                }, 'slow');
+        (function ($) {
+            $.fn.tooltip = function(text) {
+                this.append('<span class="jTooltip">' + text + '</span>');
+            };
+        }(jQuery));
+
+        $('#popout').tooltip('I am a tooltip!');
+        $('span').hover(function(){
+            $(this).children('.jTooltip').toggle();
         });
     </script>
+
+    <!-- <script type="application/javascript">
+        $(document).ready(function () {
+            $(".hero").hover(
+                function () {
+                    console.log($(this) + ' hovered');
+                    $(".container.blur").addClass('isHighlighted');
+                    $(".hero").addClass('isBlurred');
+                },
+                function () {
+                    $(".container.blur").removeClass('isHighlighted');
+                    $(".hero").removeClass('isBlurred');
+                });
+        });
+    </script> -->
 
 <!------------------------------------------INCLUDES ------------------------------------------------------------------>
     <script type="application/javascript" >
@@ -234,61 +254,119 @@ EOT;
     );
     $n = sizeof($productArray);
 
-    $productTitlePrefix = '<div class="ProductTitle text-uppercase" >';
+    $productTitlePrefix = '<div class="ProductTitle text-uppercase hidden" >';
     $productTitleArray       = array(
-        0 => $productTitlePrefix.
+        0 =>  
              'Kulcstartók'.
              '</div>
              <h3 class="text-uppercase">
                  STANDARD MÉRETŰ 2 OLDALAS, NIKKELEZETT, FÉM KERETES,3D MŰGYANTA BEVONATÚ KULCSTARTÓK
              </h3>',
-        1 => $productTitlePrefix.
+        1 =>  
              'Kulcstartók'.
              '</div>
              <h3 class="text-uppercase">
                 EGYEDI MÉRETŰ 2 OLDALAS FÉM KERET NÉLKÜLI
                 3D MŰGYANTA BEVONATÚ KULCSTARTÓK
              </h3>',
-        2 =>  $productTitlePrefix.
+        2 =>   
               'Kulcstartók'.
               '</div>
              <h3 class="text-uppercase">
                  EGYEDI MÉRETŰ FÉM KERETES KULCSTARTÓK
              </h3>',
-        3 => "3db",
-        4 => "3dm",
-        5 => $productTitlePrefix.
+        3 => "3db"
+             .'</div>',
+        4 => "3dm"
+             .'</div>',
+        5 =>  
              'Kitűzők'.
              '</div>
              <h3 class="text-uppercase">
               ÖNTÖTT FÉM KITŰZŐK
              </h3>',
-        6 => $productTitlePrefix.
+        6 =>  
              'Kitűzők'.
              '</div>
              <h3 class="text-uppercase">
                 ÖNTÖTT, FESTETT FÉM KITŰZŐK
              </h3>',
-        7 => "láncok",
+        7 => "láncok"
+             .'</div>',
         8 => "műgyanta"
+        ."</div>"
     );
-    $productDescriptionPrefix = "<div class=\"ProductDesc\">";
+    $productDescriptionPrefix = "<div class=\"ProductDesc hidden\">";
     $productDescriptionArray = array(
-        0 => $productDescriptionPrefix.
-             'STANDARD MÉRETŰ KULCSTARTÓK MATRICÁINAK MÉRETEI:'.'<br>'.'<img src="" />'.
-             '<table>
-             </table>'.
+        0 => 
+             'STANDARD MÉRETŰ KULCSTARTÓK MATRICÁINAK MÉRETEI:'.'<br>'.'<img src="'._tempPrefix.'/images/sizes.png" />'.
+            '
+            <div class="tg-wrap">
+            <table class="tg">
+              <tr>
+                <th class="tg-yw4l">Mennyiség</th>
+                <th class="tg-yw4l">25 db<br></th>
+                <th class="tg-yw4l">50 db<br></th>
+                <th class="tg-yw4l">100 db<br></th>
+                <th class="tg-yw4l">300 db<br></th>
+                <th class="tg-yw4l">500 db<br></th>
+                <th class="tg-yw4l">1000 db<br></th>
+                <th class="tg-yw4l">3000 db<br></th>
+              </tr>
+              <tr>
+                <td class="tg-yw4l">1 színnel szitázva<br></td>
+                <td class="tg-yw4l"></td>
+                <td class="tg-yw4l"></td>
+                <td class="tg-yw4l">279,-</td>
+                <td class="tg-yw4l">269,-</td>
+                <td class="tg-yw4l">259,-</td>
+                <td class="tg-yw4l">249,-</td>
+                <td class="tg-yw4l">239,-</td>
+              </tr>
+              <tr>
+                <td class="tg-yw4l">2 színnel szitázva</td>
+                <td class="tg-yw4l"></td>
+                <td class="tg-yw4l"></td>
+                <td class="tg-yw4l">289,-</td>
+                <td class="tg-yw4l">279,-</td>
+                <td class="tg-yw4l">269,-</td>
+                <td class="tg-yw4l">259,-</td>
+                <td class="tg-yw4l">249,-</td>
+              </tr>
+              <tr>
+                <td class="tg-yw4l">3 színnel szitázva</td>
+                <td class="tg-yw4l"></td>
+                <td class="tg-yw4l"></td>
+                <td class="tg-yw4l">299,-</td>
+                <td class="tg-yw4l">289,-</td>
+                <td class="tg-yw4l">279,-<br></td>
+                <td class="tg-yw4l">269,-</td>
+                <td class="tg-yw4l">259,-</td>
+              </tr>
+              <tr>
+                <td class="tg-yw4l">4 színnel szitázva vagy digitális nyomattal<br></td>
+                <td class="tg-yw4l">399,-</td>
+                <td class="tg-yw4l">349,-</td>
+                <td class="tg-yw4l">309,-</td>
+                <td class="tg-yw4l">299,-</td>
+                <td class="tg-yw4l">289,-</td>
+                <td class="tg-yw4l">279,-</td>
+                <td class="tg-yw4l">269,-</td>
+              </tr>
+            </table>
+            </div>
+            '.
              'Ha a 2 oldalas kulcstartót kétféle grafikával kérik, akkor 10,- Ft felárat számítunk fel darabonként!
             100 db-os mennyiség alatt 3.000.- beállási költséget számolunk fel.
-            Lehetőség van egyedi méretű kulcstartók elkészítésére is - kérje egyedi árajánlatunkat.' .
-             "</div>",
-        1 => $productDescriptionPrefix.
-             "Kérje egyedi árajánlatunkat.".
-             "</div>",
-        2 => $productDescriptionPrefix.
-             "Kérje egyedi árajánlatunkat".
-             "</div>",
-        3 =>$productDescriptionPrefix. "
+            Lehetőség van egyedi méretű kulcstartók elkészítésére is - kérje egyedi árajánlatunkat.'
+             ,
+        1 => 
+             "Kérje egyedi árajánlatunkat."
+             ,
+        2 => 
+             "Kérje egyedi árajánlatunkat"
+             ,
+        3 => "
                 Kérje egyedi árajánlatunkat.
                 <br>
                 <br>
@@ -305,19 +383,21 @@ EOT;
                 <br>
                 10.000 Ft-os megfendelés alatt 1.000 Ft csomagolási költséget számolunk fel!
                 Az árak nem tartalmazzák a 27%-os ÁFÁ-t!
-               ".
-            "</div>",
-        4 =>$productDescriptionPrefix.
-            "Kérje egyedi árajánlatunkat".
-            "</div>",
-        5 => $productDescriptionPrefix.
-             "Kérje egyedi árajánlatunkat.".
-             "</div>"
+               "
+            ,
+        4 =>
+            "Kérje egyedi árajánlatunkat"
+            ,
+        5 => 
+             "Kérje egyedi árajánlatunkat."
+             
     );
 ?>
 
 </head>
 <body>
+<? include_once(_tempPrefix.'/res/analyticsTracking.php'); ?>
+
 	
 	<!--  Header Section  -->
 	<header>
@@ -361,27 +441,38 @@ EOT;
 	<!--  Hero Section  -->
 	<section class="hero" id="hero">
         <a href="#" class="scrollToTop"></a>
-      <span class="navToggles">
+      <span class="navToggles" style="display: none;">
         <input type="checkbox">
              <label data-off="&#9724;" data-on="&#9654;"></label>
          </span>
 
         <div class="container blur">
-			<div class="caption caption-box">
+			<div class="caption caption-box" id="welcomeBox">
 				<h1 class="text-uppercase  animated wow fadeInLeft">Kedves látogató! Üdvözlöm weblapomon!</h1>
 				<p class="text-primary animated wow fadeInLeft">
-                    Egyéni vállalkozóként több mint 10 éve foglalkozunk a fenti termékek gyártásával,
+                    Egyéni vállalkozóként több mint 10 éve foglalkozok a fenti termékek gyártásával,
                     illetve forgalmazásával. Kisvállalkozásként elsődleges célunk az ügyfelek gyors
                     és pontos kiszolgálása.
                     Elkészítjük egyedi reklámtárgyát, hogy Ön mindig szem előtt legyen...
                 </p>
-
+                <script type="application/javascript">
+                    $(document).ready(function(){
+                        $('[data-toggle="tooltip"]').tooltip();
+                    });
+                </script>
 				<a href="#" class="app_store_btn text-uppercase animated wow fadeInLeft">
 					<i class="iphone_icon"></i>
-					<span>Egy gomb linkkel</span>
+					<span id="popout" data-toggle="tooltip"
+                          title=" CDK Kovács Róbert E. V.
+                                    3200 Gyöngyös, Bartók Béla u. 27.
+                                    Tel.,fax: 37/301-068
+                                    Mobil: 70/243-6020
+                                    E-mail: cdk@cdk.hu">
+                        Elérhetőségünk
+                    </span>
 				</a>
 
-				<a href="#" class="app_store_btn text-uppercase animated wow fadeInLeft">
+				<a href="#" class="app_store_btn text-uppercase animated wow fadeInLeft" style="visibility: hidden">
 					<i class="android_icon"></i>
 					<span>Ez is egy gomb linkkel</span>
 				</a>
@@ -439,7 +530,7 @@ EOT;
                 /* ------------------------- imageWrapper generator ---------------- */
                 for ( $i = 0; $i < count( $productArray ); $i ++ ) {
                     echo '<div class="grid-container " id="' . str_replace( $latinFindArray, $latinReplaceArray, strtolower( $productArray[ $i ] ) ) . '">';
-                    echo $productTitleArray[$i];
+                    echo '<div class="ProductTitle text-uppercase" id="' . str_replace( $latinFindArray, $latinReplaceArray, strtolower( $productArray[ $i ] ) ) . '">'.$productTitleArray[$i];
                     echo <<<EOT
                      <ul class="rig columns" >
 EOT;
@@ -460,10 +551,14 @@ EOT;
                                      echo '<span>' . $productArray[ $i ] . '</span>';
                                 echo '</li>';
                             }
-                        echo $productDescriptionArray[$i];
                    echo '</ul>';
-                echo '</div>';
-                }
+                    echo '<div class="ProductDesc" id="' . str_replace( $latinFindArray, $latinReplaceArray, strtolower( $productArray[ $i ] ) ) . '">'.$productDescriptionArray[$i].'</div>';
+
+                    echo '</div>';
+//                    echo $productDescriptionPrefix.$productDescriptionArray[$i].'</div>';
+
+
+                } //for vége
 
 
             ?>
@@ -641,21 +736,28 @@ EOT;
 	<!--  Email Subscription Section  -->
 	<section class="sub_box">
 		<p class="cta_text animated wow fadeInDown text-center">Írjon nekünk!</p>
-        <p class="text-center">
+        <p class="text-center aboutUs">
             CDK Kovács Róbert E. V. <br>
             3200 Gyöngyös, Bartók Béla u. 27. <br>
             Tel.,fax: 37/301-068<br>
             Mobil: 70/243-6020<br>
             E-mail: cdk@cdk.hu<br>
         </p>
-		<form action="javascript:void(0);" method="post" class="animated wow fadeIn" data-wow-duration="2s" id="submit_form">
-			<input type="email" id="mc-email" placeholder="Enter your email"/>
+		<form action="javascript:void(0);" method="post" class="animated wow fadeIn" data-wow-duration="2s" id="submit_form" style="display: none;">
+			<input type="text" name="mc-email" id="mc-email" placeholder="Ide írjon"/>
+            <input type="text" name="mc-subject" id="mc-subject" placeholder="Tárgy"/>
 			<button type="submit" id="mc_submit">
 				<i class="icon"></i>
 			</button>
 		</form>
-		<div class="message" id="error_msg">Hibás e-mail cím.</div>
-		<div class="message" id="success_msg">Köszönjük a feliratkozást.</div>
+        <?
+            $to = 'cdk@cdk.hu';
+            $message = $_POST['mc-email'];
+            $subject = $_POST['mc-subject'];
+            $result = mail($to, $subject, $message, null);
+        ?>
+		<div class="message" id="error_msg">Hibás paraméter.</div>
+		<div class="message" id="success_msg">Köszönjük megkeresését! </div>
 	</section>
 	<!--  End Email Subscription Section  -->
 
