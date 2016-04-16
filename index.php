@@ -275,9 +275,9 @@ EOT;
              <h3 class="text-uppercase">
                  EGYEDI MÉRETŰ FÉM KERETES KULCSTARTÓK
              </h3>',
-        3 => "3db"
+        3 => "3D betűk"
              .'</div>',
-        4 => "3dm"
+        4 => "3D matricák"
              .'</div>',
         5 =>  
              'Kitűzők'.
@@ -361,13 +361,13 @@ EOT;
             Lehetőség van egyedi méretű kulcstartók elkészítésére is - kérje egyedi árajánlatunkat.'
              ,
         1 => 
-             "Kérje egyedi árajánlatunkat."
+             "Az árak egyedi megbeszélés tárgyát képezik."
              ,
         2 => 
-             "Kérje egyedi árajánlatunkat"
+             "Az árak egyedi megbeszélés tárgyát képezik."
              ,
         3 => "
-                Kérje egyedi árajánlatunkat.
+                Az árak egyedi megbeszélés tárgyát képezik.
                 <br>
                 <br>
                 <hr>
@@ -386,18 +386,25 @@ EOT;
                "
             ,
         4 =>
-            "Kérje egyedi árajánlatunkat"
+            "Az árak egyedi megbeszélés tárgyát képezik."
             ,
         5 => 
-             "Kérje egyedi árajánlatunkat."
+             "Az árak egyedi megbeszélés tárgyát képezik."
              
     );
 ?>
 
 </head>
 <body>
-<? include_once(_tempPrefix.'/res/analyticsTracking.php'); ?>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+    ga('create', 'UA-76523106-1', 'auto');
+    ga('send', 'pageview');
+</script>
 	
 	<!--  Header Section  -->
 	<header>
@@ -592,10 +599,10 @@ EOT;
 	<section class="pictures" id="pictures">
 		<div class="container">
 			<?
-				include_once($_SERVER['DOCUMENT_ROOT']._tempPrefix."/res/juiceEmbed.php");
-				$embed = new embed();
-				$obj = $embed->main("800","500","kulcstartok");
-				echo($obj);
+//				include_once($_SERVER['DOCUMENT_ROOT']._tempPrefix."/res/juiceEmbed.php");
+//				$embed = new embed();
+//				$obj = $embed->main("800","500","kulcstartok");
+//				echo($obj);
 			?>
 		</div>
 

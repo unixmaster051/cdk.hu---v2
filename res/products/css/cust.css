@@ -9,7 +9,8 @@ margin-left: 0;
 }
 
 header nav a:hover {
-    background: linear-gradient(#E38E57 4%, #833F14 102%, #E38E57 3%);
+    /*background: linear-gradient(#E38E57 4%, #833F14 102%, #E38E57 3%);*/
+    background: linear-gradient(#FFBD56 5%, #BF3C00 102%, #B65A18 3%);
 }
 header nav a {
     margin-top: 50px;
@@ -97,7 +98,8 @@ header .burger_icon.active {
 
 .sub_box{
 
-    background-image: -moz-linear-gradient(bottom, #e0590f 0%, #b9480a 0.27%, #5a2811 99.46%, #5a3811 100%);
+    /*background-image: -moz-linear-gradient(bottom, #e0590f 0%, #b9480a 0.27%, #5a2811 99.46%, #5a3811 100%);*/
+    linear-gradient(rgb(255, 162, 0) 0%, #CF5000 100%);
 }
 
 a.app_store_btn:hover {
@@ -109,12 +111,14 @@ a.app_store_btn:hover {
     display: none;
 }
 
-#tslider .owl-controls .owl-prev:hover, #tslider .owl-controls .owl-next:hover {
+#tslider .owl-controls .owl-prev:hover, #tslider .owl-controls  {
     cursor: pointer;
-    background: url('../../../test/img/nav_arrow.png') no-repeat;  /*TODO: a next hoverje ugyanaz mint a prev-é */
+    background: url('new/res/img/nav_arrow.png') no-repeat;  /*TODO: a next hoverje ugyanaz mint a prev-é */
     filter: contrast(35%);
 }
-
+.owl-next:hover{
+    background: url('new/res/img/nav_arrow_hover.png') no-repeat;
+}
 a.app_store_btn{
     border: 3px solid #525252;
 }
