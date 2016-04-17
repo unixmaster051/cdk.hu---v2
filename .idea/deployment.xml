@@ -7,6 +7,11 @@
           <mappings>
             <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
           </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/_discarded-changes_no_upload" />
+            <excludedPath local="true" path="$PROJECT_DIR$/CDK.hu initial backup" />
+            <excludedPath local="true" path="$PROJECT_DIR$/gallery" />
+          </excludedPaths>
         </serverdata>
       </paths>
       <paths name="HOSTINGER">

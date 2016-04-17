@@ -11,6 +11,9 @@
 <body>
 EOT;
 
+
+//  <editor-fold desc="teszt">
+
     require_once(_DOCROOT."/res/appendNode.php");
 
     $c = new \tools\appendNode();
@@ -23,3 +26,5 @@ It works now!
 EOT;
 
 
+
+//</editor-fold>

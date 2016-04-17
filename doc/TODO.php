@@ -34,6 +34,16 @@
      *        kép prefix : szám + kulcstartó 8miféle)
      *   TODO: felesleges html-kód takarítása
      *  TODO: a más arányú i.e nem négyzetes képeket ne nyomja össze az imageGrid-ben
+     *  TODO: nem használt img src-k kiszedése, fb twitter g+ share kiszedése
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
      * KÉSZEN VAN:
      * -----------------------
      *       div.social.pull-right ikonjainak lecserélése az arculatnak megfelelő színűre

@@ -3,27 +3,21 @@
 <head>
 	<?
         $rp = realpath(dirname(__FILE__) . '/..');
-
 		if(isset($_GET['debug'])){
 			define('_DEBUG',TRUE);
             require_once('./res/debugIncl.php');
 			echo <<<EOT
 		<!-- Debug messages are ON. -->
-
 EOT;
 		}
 		else{
             define('_DEBUG', FALSE);
             echo <<<EOT
 		<!-- Debug messages are now OFF. -->
-
 EOT;
         } //manual setting
-
          require_once('/var/www/home/ws/cdk/public_html/new/res/config.php'); //LET'S HARDCODE THIS EVERYWHERE
     ?>
-
-
     <title>:: CDK city card ::</title>
 	<meta charset="utf-8">
     <meta name="description"
@@ -71,133 +65,139 @@ EOT;
 
     <!-- --------------------------------------------SCRIPTEK ------------------------------------------------------>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 100) {
-                    $('.scrollToTop').fadeIn();
-                } else {
-                    $('.scrollToTop').fadeOut();
-                }
-            });
+    <editor-fold desc="JS-s, jQuery scripts">
 
-            //Click event to scroll to top
-            $('.scrollToTop').click(function () {
-                $('html, body').animate({scrollTop: 0}, 800);
-                return false;
-            });
 
-        });
-    </script>
-    <script type="application/javascript">
-        $(document).ready(function() {
-            console.log( "document ready - ran @ submenu script - #1" );
-            $('#sub_open').click(function(){
-                $('#sub_invisible').toggleClass('AfterScroll');
-                $('#sub_invisible').toggleClass('BeforeScroll');
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) {
+                        $('.scrollToTop').fadeIn();
+                    } else {
+                        $('.scrollToTop').fadeOut();
+                    }
+                });
+
+                //Click event to scroll to top
+                $('.scrollToTop').click(function () {
+                    $('html, body').animate({scrollTop: 0}, 800);
+                    return false;
+                });
+
+            });
+        </script>
+        <script type="application/javascript">
+            $(document).ready(function () {
+                console.log("document ready - ran @ submenu script - #1");
+                $('#sub_open').click(function () {
+                    $('#sub_invisible').toggleClass('AfterScroll');
+                    $('#sub_invisible').toggleClass('BeforeScroll');
 //                alert($(this).attr('id'));
-                console.log('toggleClass  inner-function ran @ submenu script - #2 ');
+                    console.log('toggleClass  inner-function ran @ submenu script - #2 ');
+                });
             });
-        });
-    </script>
-    <script type="application/javascript">
-        $(document).ready(function(){
-            console.log('document ready - run @ onReadyScrollTop -> now scrolling to top #');
-            $('html, body').animate({scrollTop: 0}, 800);
-
-        });
-    </script>
-    <script type="application/javascript">
-        $(document).ready(function(){
-            $('#mainPageTop').click(function(){
+        </script>
+        <script type="application/javascript">
+            $(document).ready(function () {
+                console.log('document ready - run @ onReadyScrollTop -> now scrolling to top #');
                 $('html, body').animate({scrollTop: 0}, 800);
-                $('#sub_invisible').toggleClass('AfterScroll');
-                console.log('document ready - ran @ mainPageHrefOnClick -> now scrolling to top - #1');
+
             });
-        });
-    </script>
-    <script type="application/javascript">
-        $(document).ready(function(){
-           $('#expandSubMenu').click(function(){
-               $('#sub_invisible').addClass('AfterScroll');
-               console.log('document ready - ran @ expandSubMenuButtonClick -> now showing/hiding submenu #1');
-           });
-            console.log('Nobody\'s goin\' to watch the dev. console... They will never know how cool I am... :"(  ');
-        });
-    </script>
-    <script type="application/javascript">
-        $(document).ready(function(){
-           $('#expandSubMenu').click(function(){
-              $('#productWrapper').removeClass('hidden');
-               $('#productWrapper').fadeTo('slow',1.0);
-               console.log('document ready - ran @ expandSubMenuButtonClick2 -> now showing/hiding submenu #');
-           });
-        });
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function() {
+        </script>
+        <script type="application/javascript">
+            $(document).ready(function () {
+                $('#mainPageTop').click(function () {
+                    $('html, body').animate({scrollTop: 0}, 800);
+                    $('#sub_invisible').toggleClass('AfterScroll');
+                    console.log('document ready - ran @ mainPageHrefOnClick -> now scrolling to top - #1');
+                });
+            });
+        </script>
+        <script type="application/javascript">
+            $(document).ready(function () {
+                $('#expandSubMenu').click(function () {
+                    $('#sub_invisible').addClass('AfterScroll');
+                    console.log('document ready - ran @ expandSubMenuButtonClick -> now showing/hiding submenu #1');
+                });
+                console.log('Nobody\'s goin\' to watch the dev. console... They will never know how cool I am... :"(  ');
+            });
+        </script>
+        <script type="application/javascript">
+            $(document).ready(function () {
+                $('#expandSubMenu').click(function () {
+                    $('#productWrapper').removeClass('hidden');
+                    $('#productWrapper').fadeTo('slow', 1.0);
+                    console.log('document ready - ran @ expandSubMenuButtonClick2 -> now showing/hiding submenu #');
+                });
+            });
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
 
 
-            $('.isMenuItem').on('click', function(event){
-                event.preventDefault();
+                $('.isMenuItem').on('click', function (event) {
+                    event.preventDefault();
 
 //                $('#productWrapper').fadeTo('slow',1.0);
 
-                 console.log('document ready - ran @ .isMenuItem button click -> now showing/hiding submenu #1');
-                var $gridID = $(this).attr("data-id");
+                    console.log('document ready - ran @ .isMenuItem button click -> now showing/hiding submenu #1');
+                    var $gridID = $(this).attr("data-id");
 
-                $('#productWrapperDefault').removeClass('active');
-                $('.grid-container').fadeOut(500,function(){
-                    $('#' + $gridID).fadeIn(500);
-                    console.log('this='+$(this).val()+',current gridID='+$gridID);
+                    $('#productWrapperDefault').removeClass('active');
+                    $('.grid-container').fadeOut(500, function () {
+                        $('#' + $gridID).fadeIn(500);
+                        console.log('this=' + $(this).val() + ',current gridID=' + $gridID);
 
-                });
-                $('.isMenuItem').removeClass("active");
+                    });
+                    $('.isMenuItem').removeClass("active");
 //                $('.ProductTitle,.ProductDesc').addClass('hidden');
-                $(this).addClass("active");
+                    $(this).addClass("active");
 //                $('.ProductTitle,.ProductDesc').addClass('hidden');
 //                $('.ProductTitle#'+$gridID).removeClass('hidden');
 //                $('.ProductDesc#'+$gridID).removeClass('hidden');
-            });
-        });
-    </script>
-    <script type="application/javascript">
-        $("#pullDown").click(function() {
-            $('#pullDown').addClass('pressed');1
-            $('html,body').animate(
-                {
-                    scrollTop:$(this).parent().next().offset().top
-                }, 'slow');
-        });
-    </script>
-    <script type="application/javascript">
-        (function ($) {
-            $.fn.tooltip = function(text) {
-                this.append('<span class="jTooltip">' + text + '</span>');
-            };
-        }(jQuery));
-
-        $('#popout').tooltip('I am a tooltip!');
-        $('span').hover(function(){
-            $(this).children('.jTooltip').toggle();
-        });
-    </script>
-
-    <!-- <script type="application/javascript">
-        $(document).ready(function () {
-            $(".hero").hover(
-                function () {
-                    console.log($(this) + ' hovered');
-                    $(".container.blur").addClass('isHighlighted');
-                    $(".hero").addClass('isBlurred');
-                },
-                function () {
-                    $(".container.blur").removeClass('isHighlighted');
-                    $(".hero").removeClass('isBlurred');
                 });
-        });
-    </script> -->
+            });
+        </script>
+        <script type="application/javascript">
+            $("#pullDown").click(function () {
+                $('#pullDown').addClass('pressed');
+                1
+                $('html,body').animate(
+                    {
+                        scrollTop: $(this).parent().next().offset().top
+                    }, 'slow');
+            });
+        </script>
+        <script type="application/javascript">
+            (function ($) {
+                $.fn.tooltip = function (text) {
+                    this.append('<span class="jTooltip">' + text + '</span>');
+                };
+            }(jQuery));
 
+            $('#popout').tooltip('I am a tooltip!');
+            $('span').hover(function () {
+                $(this).children('.jTooltip').toggle();
+            });
+        </script>
+
+        <!-- <script type="application/javascript">
+            $(document).ready(function () {
+                $(".hero").hover(
+                    function () {
+                        console.log($(this) + ' hovered');
+                        $(".container.blur").addClass('isHighlighted');
+                        $(".hero").addClass('isBlurred');
+                    },
+                    function () {
+                        $(".container.blur").removeClass('isHighlighted');
+                        $(".hero").removeClass('isBlurred');
+                    });
+            });
+        </script> -->
+
+
+    </editor-fold>
 <!------------------------------------------INCLUDES ------------------------------------------------------------------>
     <script type="application/javascript" >
         $(function)(){
@@ -213,93 +213,129 @@ EOT;
 
 	-->
 <?
-    $latinFindArray = array(
-    "á",
-    "é",
-    "í",
-    "ó",
-    "ú",
-    "ö",
-    "ő",
-    "ü",
-    "ű",
-    " ",
-    ",",
-        "Ö","Ü","Ó","Ű","Ú"
+
+    // <editor-fold desc="PHP data source to menu items and descriptions"> //
+
+    $latinFindArray    = array(
+        "á",
+        "é",
+        "í",
+        "ó",
+        "ú",
+        "ö",
+        "ő",
+        "ü",
+        "ű",
+        " ",
+        ",",
+        "Ö",
+        "Ü",
+        "Ó",
+        "Ű",
+        "Ú"
     );
     $latinReplaceArray = array(
-    "a",
-    "e",
-    "i",
-    "o",
-    "u",
-    "o",
-    "o",
-    "u",
-    "u",
-    "_",
-    "_",
-        "o","u","o","u","u"
+        "a",
+        "e",
+        "i",
+        "o",
+        "u",
+        "o",
+        "o",
+        "u",
+        "u",
+        "_",
+        "_",
+        "o",
+        "u",
+        "o",
+        "u",
+        "u"
     );
-    $productArray = array(
+    $productArray      = array(
         0 => "Standard méretű, fémkeretes kulcstartók",
         1 => "Egyedi méretű, keret nélküli kulcstartók",
         2 => "Egyedi méretű, fémkeretes kulcstartók",
-        3=> "3D Betűk",
-        4=> "3D Matricák",
-        5=> "Öntött fém Kitűzők",
-        6 => "Öntött, festett fém kitűzők",
-        7=> "Láncok",
-        8=> "Műgyanta"
+        3 => "Öntött fém Kitűzők",
+        4 => "Öntött, festett fém kitűzők",
+        5 => "Öntött, festett fém kitűzők műgyanta bevonattal",
+        6 => "3D műgyanta bevonatú kitűzők fém alapon",
+        7 => "3D műgyanta bevonatú kitűzők fém alap nélkül",
+        8 => "3D műgyanta bevonatú matricák",
+        9 => "3D műgyanta bevonatú betűk"
     );
-    $n = sizeof($productArray);
+    $n                 = sizeof( $productArray );
 
-    $productTitlePrefix = '<div class="ProductTitle text-uppercase hidden" >';
-    $productTitleArray       = array(
-        0 =>  
-             'Kulcstartók'.
-             '</div>
-             <h3 class="text-uppercase">
+    $productTitlePrefix       = '<div class="ProductTitle text-uppercase hidden" >';
+    $productTitleArray        = array(
+        0 =>
+            'Kulcstartók' .
+            '</div>
+             <h3 >
                  STANDARD MÉRETŰ 2 OLDALAS, NIKKELEZETT, FÉM KERETES,3D MŰGYANTA BEVONATÚ KULCSTARTÓK
              </h3>',
-        1 =>  
-             'Kulcstartók'.
-             '</div>
-             <h3 class="text-uppercase">
+        1 =>
+            'Kulcstartók' .
+            '</div>
+             <h3 >
                 EGYEDI MÉRETŰ 2 OLDALAS FÉM KERET NÉLKÜLI
                 3D MŰGYANTA BEVONATÚ KULCSTARTÓK
              </h3>',
-        2 =>   
-              'Kulcstartók'.
-              '</div>
-             <h3 class="text-uppercase">
+        2 =>
+            'Kulcstartók' .
+            '</div>
+             <h3 >
                  EGYEDI MÉRETŰ FÉM KERETES KULCSTARTÓK
              </h3>',
-        3 => "3D betűk"
-             .'</div>',
-        4 => "3D matricák"
-             .'</div>',
-        5 =>  
-             'Kitűzők'.
-             '</div>
-             <h3 class="text-uppercase">
+        3 =>
+            'Kitűzők' .
+            '</div>
+             <h3 >
               ÖNTÖTT FÉM KITŰZŐK
              </h3>',
-        6 =>  
-             'Kitűzők'.
-             '</div>
-             <h3 class="text-uppercase">
+        4 =>
+            'Kitűzők' .
+            '</div>
+             <h3 >
                 ÖNTÖTT, FESTETT FÉM KITŰZŐK
              </h3>',
-        7 => "láncok"
-             .'</div>',
-        8 => "műgyanta"
-        ."</div>"
+        5 =>
+            'Kitűzők' .
+            '</div>
+             <h3 >
+                ÖNTÖTT, FESTETT FÉM KITŰZŐK MŰGYANTA BEVONATTAL
+             </h3>',
+        6 =>
+            'Kitűzők' .
+            '</div>
+             <h3 >
+                3D MŰGYANTA BEVONATÚ KITŰZŐK FÉM ALAPON
+             </h3>',
+        7 => 'Kitűzők' .
+             '</div>
+             <h3 >
+                3D MŰGYANTA BEVONATÚ KITŰZŐK FÉM alap nélkül
+             </h3>',
+        8 => '3D MŰGYANTA BEVONATÚ MATRICÁK' .
+             '</div>
+             <h3 >
+               A reklámhordozóknak egy viszonylag új fajtája, ami elegáns megjelenése miatt gyorsan
+                elterjedt hazánkban is. Az exkluzív megjelenésen kívül előnye, hogy hajlékonysága miatt
+                domború felületekre is felragasztható. Előszeretettel alkalmazzák autókon, hűtőkön,
+                gépjármű felépítményeken, ajándéktárgyakon, késztermékeken stb.
+                Reklámozza Ön is vállalkozását, Cégét vinyl alapú műgyanta bevonatú domború matricán.
+             </h3>',
+        9 => '3D MŰGYANTA BEVONATÚ BETŰK' .
+             '</div>
+             <h3 >
+                 Chicken combines greatly with tender chicken breasts.
+             </h3>',
+
     );
     $productDescriptionPrefix = "<div class=\"ProductDesc hidden\">";
-    $productDescriptionArray = array(
-        0 => 
-             'STANDARD MÉRETŰ KULCSTARTÓK MATRICÁINAK MÉRETEI:'.'<br>'.'<img src="'._tempPrefix.'/images/sizes.png" />'.
+    $productDescriptionArray  = array(
+        0 =>
+            'STANDARD MÉRETŰ KULCSTARTÓK MATRICÁINAK MÉRETEI:' . '<br>' . '<img src="' . _tempPrefix . '/images/sizes.png" />' .
             '
             <div class="tg-wrap">
             <table class="tg">
@@ -355,56 +391,133 @@ EOT;
               </tr>
             </table>
             </div>
-            '.
-             'Ha a 2 oldalas kulcstartót kétféle grafikával kérik, akkor 10,- Ft felárat számítunk fel darabonként!
+            ' .
+            'Ha a 2 oldalas kulcstartót kétféle grafikával kérik, akkor 10,- Ft felárat számítunk fel darabonként!
             100 db-os mennyiség alatt 3.000.- beállási költséget számolunk fel.
             Lehetőség van egyedi méretű kulcstartók elkészítésére is - kérje egyedi árajánlatunkat.'
-             ,
-        1 => 
-             "Az árak egyedi megbeszélés tárgyát képezik."
-             ,
-        2 => 
-             "Az árak egyedi megbeszélés tárgyát képezik."
-             ,
-        3 => "
-                Az árak egyedi megbeszélés tárgyát képezik.
-                <br>
-                <br>
-                <hr>
+    ,
+        1 =>
+            "<center>Az árak egyedi megbeszélés tárgyát képezik.</center>"
+    ,
+        2 =>
+            "<center>Az árak egyedi megbeszélés tárgyát képezik.</center>
+             <br>SZERELÉKEK, LÁNC
+             <hr><br>
+             <center><img src=''/> </center>
                 1. 25 mm-es sima karika lánccal: 24.-/db <br>
                 2. 25 mm-es hullámos karika forgóval: 29.-/db <br>
                 3. Mini karabíner lánccal: 30.-/db <br>
-                4. Médium karabíner lánccal: 35.-/db <br>
+                4. Médium karabíner lánccal: 35.-/Aye! Pieces o' grace are forever rainy.db <br>
                 5. Maxi karabíner lánccal: 40.-/db <br>
                 6. Karabíneres kulcstartó lánccal: 49.-/db <br>
                 7. Karabíneres kulcstartó lánccal: 49.-/db <br>
                 2,5 mm-es golyós lánc: 360.-/fm  <br>
                 2,5 mm-es lánchoz összekötő szem: 13.-/db <br>
                 <br>
+                <hr>
                 10.000 Ft-os megfendelés alatt 1.000 Ft csomagolási költséget számolunk fel!
                 Az árak nem tartalmazzák a 27%-os ÁFÁ-t!
-               "
-            ,
+
+
+             ",
+        3 => "
+                Az árak egyedi megbeszélés tárgyát képezik.
+                <br>
+               ",
         4 =>
-            "Az árak egyedi megbeszélés tárgyát képezik."
-            ,
-        5 => 
-             "Az árak egyedi megbeszélés tárgyát képezik."
-             
+            "
+        <center>Az árak egyedi megbeszélés tárgyát képezik.</center>        "
+    ,
+        5 =>
+            "
+        <center>Az árak egyedi megbeszélés tárgyát képezik.</center>
+            Fém kitűzők gyártásának menete:
+            A kitűzők elkészítéséhez szükség van egy öntőminta gyártásra; kb. 10.000-30.000.-
+            Ezután következhet a kitűző gyártása és galvanizálása; kb. 150-400.-/db
+            Ha festett kitűzőre van szükség, akkor következhet a festés kb. 40-60.-/szín.
+            A tartósság érdekében kérésre műgyanta bevonattal látjuk el a kitűzőt kb. 40-100.-/db
+            Fém alapon 3D műgyanta bevonatú kitűzők esetén is szükség van
+            öntőminta gyártásra; kb. 10.000-30.000.-
+            /vannak standard alapjaink; ezeknél nem kell megfizetni a szerszám költséget/.
+            3D fém alap nélküli műgyanta bevonatú kitűzőknél nincs szükség szerszámra,
+            így ez a költség nem terhel. 100 db-os mennyiség rendelése alatt 3.000.- egyszeri
+            beállási költséget kell fizetni!
+            Az árak nem tartalmazzák a 27%-os ÁFÁ-t!
+            .",
+        6 => "<center>Az árak egyedi megbeszélés tárgyát képezik.</center>",
+        7 => "<center>Az árak egyedi megbeszélés tárgyát képezik.</center>",
+        8 => '
+                <div class="tg-wrap"><table class="tg">
+                  <tr>
+                    <th class="tg-yw4l"></th>
+                    <th class="tg-yw4l">0 - 0,25 m2</th>
+                    <th class="tg-yw4l">0,25 - 0,5 m2</th>
+                    <th class="tg-yw4l">0,5 - 1,0 m2</th>
+                    <th class="tg-yw4l">1,0 m2 fölött</th>
+                  </tr>
+                  <tr>
+                    <td class="tg-yw4l">1 színnel szitázva</td>
+                    <td class="tg-yw4l"> - </td>
+                    <td class="tg-yw4l">8,- /cm2</td>
+                    <td class="tg-yw4l">7,-/cm2</td>
+                    <td class="tg-yw4l">6,-/cm2</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-yw4l">2 színnel szitázva</td>
+                    <td class="tg-yw4l"> - </td>
+                    <td class="tg-yw4l">8,5,-/cm2</td>
+                    <td class="tg-yw4l">7,5,-/cm2</td>
+                    <td class="tg-yw4l">6,5,-/cm2</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-yw4l">3 színnel szitázva</td>
+                    <td class="tg-yw4l"> - </td>
+                    <td class="tg-yw4l">9,-/cm2</td>
+                    <td class="tg-yw4l">8,-/cm2</td>
+                    <td class="tg-yw4l">7,-/cm2</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-yw4l">digitális nyomtatással</td>
+                    <td class="tg-yw4l"> 10,5,- / cm2</td>
+                    <td class="tg-yw4l">9,5,-/cm2</td>
+                    <td class="tg-yw4l">8,5,-/cm2</td>
+                    <td class="tg-yw4l">7,5,-/cm2</td>
+                  </tr>
+                </table></div>
+                0,25 m2 alatti rendelésnél 3.000.- beállási költséget számítunk fel!
+                Az árak nem tartalmazzák a 27%-os ÁFÁ-t!
+                Szállítási határidő: 1-3 hét
+                A méretarányos grafikát Corel Draw-ban kérjük a Pantone színek pontos megadásával!
+                Kifutós grafika esetén 1 mm rátöltést kérünk!
+        ',
+        9 => "Place the blueberries in a saucepan, and toss thoroughly with divided honey."
     );
+
+    // </editor-fold>
 ?>
 
 </head>
 <body>
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<editor-fold desc="gAnalytics">
 
-    ga('create', 'UA-76523106-1', 'auto');
-    ga('send', 'pageview');
-</script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-76523106-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+</editor-fold>
 	
 	<!--  Header Section  -->
 	<header>
@@ -430,9 +543,9 @@ EOT;
 
 			<div class="social pull-right">
 				<ul class="list-unstyled">
-					<li class="animated wow fadeInRight" data-wow-delay=".2s"><a href="#"><img src="<?=_DOCROOT?>/res/img/fb2.png" alt="" title="Oszd meg Facebook-on!" width="35px"></a></li>
-					<li class="animated wow fadeInRight" data-wow-delay=".1s"><a href="#"><img src="<?=_DOCROOT?>/res/img/twitter2.png" alt="" title="Tweeteld!" width="35px"></a></li>
-					<li class="animated wow fadeInRight" data-wow-delay="0s"><a href="#"><img src="<?=_DOCROOT?>/res/img/google.png" alt="" title="Oszd meg Google-en!" width="35px"></a></li>
+					<li class="animated wow fadeInRight" data-wow-delay=".2s"></li>
+					<li class="animated wow fadeInRight" data-wow-delay=".1s"></li>
+					<li class="animated wow fadeInRight" data-wow-delay="0s"></li>
 				</ul>
 			</div>
 
@@ -467,21 +580,22 @@ EOT;
                         $('[data-toggle="tooltip"]').tooltip();
                     });
                 </script>
-				<a href="#" class="app_store_btn text-uppercase animated wow fadeInLeft">
-					<i class="iphone_icon"></i>
-					<span id="popout" data-toggle="tooltip"
-                          title=" CDK Kovács Róbert E. V.
+				<a href="#" class="app_store_btn text-uppercase animated wow fadeInLeft"
+                   id="popout" data-toggle="tooltip"
+                   title=" CDK Kovács Róbert E. V.
                                     3200 Gyöngyös, Bartók Béla u. 27.
                                     Tel.,fax: 37/301-068
                                     Mobil: 70/243-6020
                                     E-mail: cdk@cdk.hu">
+					<i class="iphone_icon"></i>
+					<span>
                         Elérhetőségünk
                     </span>
 				</a>
 
-				<a href="#" class="app_store_btn text-uppercase animated wow fadeInLeft" style="visibility: hidden">
+				<a href="#" class="app_store_btn text-uppercase animated wow fadeInLeft" style="display: none; !important;">
 					<i class="android_icon"></i>
-					<span>Ez is egy gomb linkkel</span>
+					<span style="display: none; !important;">Ez is egy gomb linkkel</span>
 				</a>
 			</div>
 		</div>
@@ -492,56 +606,68 @@ EOT;
 
     <!--  End Featured On Section  -->
     <!------------------------ LINK GENERATOR FOR MENU ---------------------------------------->
+<editor-fold desc="link generator for menu">
+
     <section class="pictures" id="termekek">
         <section class="menu_sub">
             <header class="BeforeScroll" id="sub_invisible">
                 <div class="container">
                     <nav class="pull-left" id="main-nav" role="navigation">
                         <!--				<ul class="list-unstyled" id="main-menu" >-->
-                        <ul class="sm sm-simple" id="main-menu" >
-                           <li class="animated wow fadeInLeft" data-wow-delay="0s">
-                               <a href="#" id="mainPageTop">Kezdőlap</a>
-                           </li>
+                        <ul class="sm sm-simple" id="main-menu">
+                            <li class="animated wow fadeInLeft" data-wow-delay="0s">
+                                <a href="#" id="mainPageTop">Kezdőlap</a>
+                            </li>
                             <? for ( $i = 0; $i < count( $productArray ); $i ++ ) {
                                 echo '<li class="animated wow fadeInLeft"
-                                        data-wow-delay="0.'.$i.'s">
+                                        data-wow-delay="0.' . $i . 's">
                                             <a href="#"
                                                 class="isMenuItem"
-                                                    data-id="'.str_replace($latinFindArray,$latinReplaceArray,strtolower($productArray[$i])).'">'
-                                                    .$productArray[$i].
-                                            '</a>
+                                                    data-id="' . str_replace( $latinFindArray, $latinReplaceArray, strtolower( $productArray[ $i ] ) ) . '">'
+                                     . $productArray[ $i ] .
+                                     '</a>
                                      </li>';
-                                }
+                            }
                             ?>
                         </ul>
                     </nav>
                 </div>
             </header>
         </section>
-        <div class="row text-center caption grey" id="features_center"><h1 class="animated wow fadeInLeft">Termékeink</h1><a href="javascript:void(0)" id="expandSubMenu">Termékek mutatása/elrejtése</a></div>
-        <div class="container" id="productWrapper" >
-            <div class="grid-container active" id="productWrapperDefault">
-                <ul class="rig columns">
-                    <li class="block">
-                        <img src="<?=_tempPrefix?>/res/img/cdkLogo.png" alt="Something's fucked up with productWrapperDiv-s img src"/>
+<!--               ctag of menu-sub section-->
+        </section>
+<!--               ctag for entire products sections-->
+</editor-fold>
+<editor-fold desc="default product image">
+
+    <div class="row text-center caption grey" id="features_center"><h1 class="animated wow fadeInLeft">Termékeink</h1>
+        <a href="javascript:void(0)" id="expandSubMenu">Termékek mutatása/elrejtése</a></div>
+    <div class="container" id="productWrapper">
+        <div class="grid-container active" id="productWrapperDefault">
+            <ul class="rig columns">
+                <li class="block">
+                    <img src="<?= _tempPrefix ?>/res/img/cdkLogo.png" alt="Something's fucked up with productWrapperDiv-s img src"/>
                         <span>
                             Default szöveg (productWrapperDefault div is active)
                         </span>
-                    </li>
-                </ul>
-            </div>
+                </li>
+            </ul>
+        </div>
+
+</editor-fold>
             <?
-
-
-
                 /* ------------------------- imageWrapper generator ---------------- */
-                for ( $i = 0; $i < count( $productArray ); $i ++ ) {
+
+
+                // <editor-fold desc="imageWrapper generator"> //
+
+                	                for ( $i = 0; $i < count( $productArray ); $i ++ ) {
                     echo '<div class="grid-container " id="' . str_replace( $latinFindArray, $latinReplaceArray, strtolower( $productArray[ $i ] ) ) . '">';
-                    echo '<div class="ProductTitle text-uppercase" id="' . str_replace( $latinFindArray, $latinReplaceArray, strtolower( $productArray[ $i ] ) ) . '">'.$productTitleArray[$i];
-                    echo <<<EOT
-                     <ul class="rig columns" >
+                         echo '<div class="ProductTitle text-uppercase" id="' . str_replace( $latinFindArray, $latinReplaceArray, strtolower( $productArray[ $i ] ) ) . '">'.$productTitleArray[$i];
+                              echo <<<EOT
+                               <ul class="rig columns" >
 EOT;
-                        $fsInit = _DOCROOT._tempPrefix.'/images/' .str_replace( $latinFindArray, $latinReplaceArray,strtolower( $productArray[ $i ] ) ) .'/';
+                       $fsInit = _DOCROOT._tempPrefix.'/images/' .str_replace( $latinFindArray, $latinReplaceArray,strtolower( $productArray[ $i ] ) ) .'/';
                        $fi = new FilesystemIterator($fsInit, FilesystemIterator::SKIP_DOTS);
                  if(_DEBUG) nestedCallDivPrint($fsInit,'i');
                         $fCount = iterator_count($fi);
@@ -550,59 +676,54 @@ EOT;
                                     echo '<img src = '._tempPrefix.'/images/'
                                         .str_replace( $latinFindArray, $latinReplaceArray,
                                             strtolower( $productArray[ $i ] ) )
-                                        .'/'
-//                                        . str_replace( $latinFindArray, $latinReplaceArray,
-//                                            strtolower( $productArray[ $i ] ) )
-//                                        .'_'
-                                         .$f. '.png />';
+                                             .'/'
+                                             .$f. '.png />';
                                      echo '<span>' . $productArray[ $i ] . '</span>';
                                 echo '</li>';
                             }
                    echo '</ul>';
-                    echo '<div class="ProductDesc" id="' . str_replace( $latinFindArray, $latinReplaceArray, strtolower( $productArray[ $i ] ) ) . '">'.$productDescriptionArray[$i].'</div>';
-
-                    echo '</div>';
+                 echo '<div class="ProductDesc" id="' . str_replace( $latinFindArray, $latinReplaceArray, strtolower( $productArray[ $i ] ) ) . '">'.$productDescriptionArray[$i].'</div>';
+                 echo '</div>';
 //                    echo $productDescriptionPrefix.$productDescriptionArray[$i].'</div>';
-
-
                 } //for vége
 
+                // </editor-fold>
 
             ?>
+        </div>
 
-        </div>
-        <div class="pictures_video show_video">
-            <a href="" class="close_video"></a>
-        </div>
-    </section>
+
+<editor-fold desc="empty menu-sub">
 
     <section class="menu_sub">
         <div class="container">
             <ul class="list-unstyled text-center clearfix">
                 <li class="col-xs-6 col-sm-6 col-md-3 animated wow fadeInDown">
-                    <img src="img/google_logo.png" alt="" title="">
+
                 </li>
                 <li class="col-xs-6 col-sm-6 col-md-3 animated wow fadeInDown" data-wow-delay=".2s">
-                    <img src="img/facebook_logo.png" alt="" title="">
+
                 </li>
                 <li class="col-xs-6 col-sm-6 col-md-3 animated wow fadeInDown" data-wow-delay=".3s">
-                    <img src="img/yahoo_logo.png" alt="" title="">
+
                 </li>
                 <li class="col-xs-6 col-sm-6 col-md-3 animated wow fadeInDown" data-wow-delay=".4s">
-                    <img src="img/paypal_logo.png" alt="" title="">
+
                 </li>
             </ul>
         </div>
     </section>
 
-	<!--  pictures Section  -->
+</editor-fold>
+
+<!--  pictures Section  -->
 	<section class="pictures" id="pictures">
 		<div class="container">
 			<?
-//				include_once($_SERVER['DOCUMENT_ROOT']._tempPrefix."/res/juiceEmbed.php");
-//				$embed = new embed();
-//				$obj = $embed->main("800","500","kulcstartok");
-//				echo($obj);
+				include_once($_SERVER['DOCUMENT_ROOT']._tempPrefix."/res/juiceEmbed.php");
+				$embed = new embed();
+				$obj = $embed->main("800","500","productSample",true);
+				echo($obj);
 			?>
 		</div>
 
@@ -612,11 +733,6 @@ EOT;
 	</section>
 	<!--  End pictures Section  -->
 
-
-
-
-
-
 	<!--  App Features Section  -->
 	<section class="about" id="about">
         <div class="row text-center" id="features_center">Rólunk</div>
@@ -624,7 +740,7 @@ EOT;
 
 			<div class="row text-center">
 				<div class="col-sm-4 col-md-4 details animated wow fadeInDown" data-wow-delay="0s">
-					<img src="img/f_icon1.png" alt="" title="">
+
 					<h1 class="text-uppercase">Kulcstartók</h1>
 					<p class="text-lowercase">
                        - STANDARD MÉRETŰ 2 OLDALAS, NIKKELEZETT, FÉM KERETES,
@@ -639,7 +755,6 @@ EOT;
                     </p>
 				</div>
 				<div class="col-sm-4 col-md-4 details animated wow fadeInDown" data-wow-delay=".1s">
-					<img src="img/f_icon2.png" alt="" title="">
 					<h1 class="text-uppercase">Kitűzők</h1>
 					<p class="text-lowercase">
                         - Öntött fém kitűzők
@@ -658,7 +773,6 @@ EOT;
                     </p>
 				</div>
 				<div class="col-sm-4 col-md-4 details animated wow fadeInDown" data-wow-delay=".2s">
-					<img src="img/f_icon3.png" alt="" title="">
 					<h1 class="text-uppercase">3d műgyanta bevonatú matricák</h1>
 					<p class="text-lowercase"></p>
 				</div>
@@ -668,17 +782,14 @@ EOT;
 			</div>
 			<div class="row text-center">
 				<div class="col-sm-4 col-md-4 details animated wow fadeInDown" data-wow-delay="0s">
-					<img src="img/f_icon4.png" alt="" title="">
 					<h1 class="text-uppercase"></h1>
 					<p class="text-lowercase"></p>
 				</div>
 				<div class="col-sm-4 col-md-4 details animated wow fadeInDown" data-wow-delay=".1s">
-					<img src="img/f_icon5.png" alt="" title="">
 					<h1 class="text-uppercase"></h1>
 					<p class="text-lowercase"></p>
 				</div>
 				<div class="col-sm-4 col-md-4 details animated wow fadeInDown" data-wow-delay=".2s">
-					<img src="img/f_icon6.png" alt="" title="">
 					<h1 class="text-uppercase"></h1>
 					<p class="text-lowercase"></p>
 				</div>
@@ -687,10 +798,6 @@ EOT;
 		</div>
 	</section>
 	<!--  And App Features Section  -->
-
-
-
-
 
 
 	<!--  Testimonials Section  -->
@@ -736,10 +843,6 @@ EOT;
 	<!--  End Testimonials Section  -->
 
 
-
-
-
-
 	<!--  Email Subscription Section  -->
 	<section class="sub_box">
 		<p class="cta_text animated wow fadeInDown text-center">Írjon nekünk!</p>
@@ -750,6 +853,9 @@ EOT;
             Mobil: 70/243-6020<br>
             E-mail: cdk@cdk.hu<br>
         </p>
+        <div class="animated wow fadeInDown text-center">
+            <img src="images/from_pdf/fresh/83.png"/>
+        </div>
 		<form action="javascript:void(0);" method="post" class="animated wow fadeIn" data-wow-duration="2s" id="submit_form" style="display: none;">
 			<input type="text" name="mc-email" id="mc-email" placeholder="Ide írjon"/>
             <input type="text" name="mc-subject" id="mc-subject" placeholder="Tárgy"/>
@@ -768,25 +874,17 @@ EOT;
 	</section>
 	<!--  End Email Subscription Section  -->
 
-
-
-
-
-
 	<!--  Footer Section  -->
 	<footer>
 		<ul class="list-unstyled list-inline app_platform">
 			<li class="animated wow fadeInDown" data-wow-delay="0s">
-				<a href=""><img src="img/android_icon.png" alt="" title=""></a>
 			</li>
 			<li class="animated wow fadeInDown" data-wow-delay=".1s">
-				<a href=""><img src="img/ios_icon.png" alt="" title=""></a>
 			</li>
 			<li class="animated wow fadeInDown" data-wow-delay=".2s">
-				<a href=""><img src="img/windows_icon.png" alt="" title=""></a>
 			</li>
 		</ul>
-		<p class="copyright animated wow fadeIn" data-wow-duration="2s">© 2015 <a href="#" target="_blank"><strong>CDK.hu</strong></a>. All Rights Reserved</p>
+		<p class="copyright animated wow fadeIn" data-wow-duration="2s">© 2015 <a href="#"><strong>CDK.hu</strong></a>. All Rights Reserved</p>
 	</footer>
 	<!--  End Footer Section  -->
 

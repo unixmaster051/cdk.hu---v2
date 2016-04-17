@@ -99,7 +99,7 @@ header .burger_icon.active {
 .sub_box{
 
     /*background-image: -moz-linear-gradient(bottom, #e0590f 0%, #b9480a 0.27%, #5a2811 99.46%, #5a3811 100%);*/
-    linear-gradient(rgb(255, 162, 0) 0%, #CF5000 100%);
+    background: linear-gradient(rgb(255, 162, 0) 0%, #CF5000 100%);
 }
 
 a.app_store_btn:hover {
@@ -239,6 +239,7 @@ section.menu_sub:nth-child(1) > header:nth-child(1){  /* menu_sub -> container d
    /*background: linear-gradient(#fbfbfb 0%, #A79E85 100%);*/
 
     /*background: linear-gradient(#fbfbfb 0%, RGBA(167, 158, 133, 0.67) 100%);*/ /* TODO:!!!!!! */
+    min-height: 180px;
 }
 
 header .BeforeScroll li a:hover{
@@ -533,8 +534,8 @@ header nav a {
     width: 1410px;
 }
 
-a.isMenuItem{
-    padding-top: 14px;
+a.isMenuItem, #mainPageTop {
+    padding-top: 20px;
     padding-right: 10px;
     padding-bottom: 25px;
     padding-left: 10px;
@@ -613,11 +614,67 @@ a.isMenuItem{
         background: linear-gradient(rgb(255, 162, 0) 0%, #CF5000 100%)
 }
 .aboutUs{
-    position: relative;
     font-family: "Tahoma","Geneva",sans-serif;
     font-size: 14px;
     letter-spacing: -0.4pt;
-    float: left;
-    margin-block-start: 150px;
-    margin-inline-start: 100px;
+
+}
+
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-color: #aabcfe;
+    margin: 0px auto;
+}
+
+.tg td {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: #aabcfe;
+    color: #669;
+    background-color: #e8edff;
+}
+
+.tg th {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: #aabcfe;
+    color: #039;
+    background-color: #b9c9fe;
+}
+
+.tg .tg-yw4l {
+    vertical-align: top
+}
+
+@media screen and (max-width: 767px) {
+    .tg {
+        width: auto !important;
+    }
+
+    .tg col {
+        width: auto !important;
+    }
+
+    .tg-wrap {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin: auto 0px;
+    }
+}
+.div.text-center:nth-child(3) > img:nth-child(1){
+    margin: 0px auto;
+    display: inherit;
+    max-height: 500px;
 }
