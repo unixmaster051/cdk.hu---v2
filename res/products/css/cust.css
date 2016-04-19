@@ -18,8 +18,7 @@ header nav a {
     text-decoration: none;
 
     color: #333333;
-    padding: 53px 10px 58px;
-
+    padding: 30px 10px 35px;
 }
 
 header nav li a:hover{
@@ -129,10 +128,9 @@ a.app_store_btn{
 /*}*/
 
 #main-menu{
-
-    padding-left: 0;
-    list-style: none
-
+    list-style: none;
+    margin-block-start: 26px;
+    float: left !important;
 }
 
 .scrollToTop{
@@ -200,7 +198,7 @@ a.app_store_btn{
 }
 
 header .logo{
-    margin: 20px 100px 0px 0;
+    margin: 10px 0px 0px -145px;
     padding: 0 0 20px 0;
 }
 .grey > h1:nth-child(1){
@@ -517,17 +515,6 @@ header#sub_invisible.BeforeScroll.AfterScroll{
 }
 
 
-header nav a {
-    margin-top: 50px;
-    font: bold 11px Arial;
-    text-decoration: none;
-    color: #333333;
-    padding-top: 48px;
-    padding-right: 10px;
-    padding-bottom: 57px;
-    padding-left: 10px;
-}
-
 .container {
     max-width: 1410px;
 
@@ -620,6 +607,7 @@ a.isMenuItem, #mainPageTop {
 
 }
 
+
 .tg {
     border-collapse: collapse;
     border-spacing: 0;
@@ -677,4 +665,181 @@ a.isMenuItem, #mainPageTop {
     margin: 0px auto;
     display: inherit;
     max-height: 500px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background: linear-gradient(#FFBD56 5%, #BF3C00 102%, #B65A18 3%);
+    padding: 53px 10px 58px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    color: #351B0B !important;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: -20px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    /*position: absolute;*/
+    /*background-color: #f9f9f9;*/
+    /*min-width: 160px;*/
+    /*box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);*/
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    /*color: black;*/
+    /*padding: 12px 16px;*/
+    /*text-decoration: none;*/
+    /*display: block;*/
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    /*background-color: #f1f1f1*/
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+
+.animated.wow.fadeinleft.animated {
+    visibility: visible;
+    /*margin: -23px 0px 0px 70px !important;*/
+    margin-block-start: -79px;
+    /*margin-left: -1px;*/
+    /*margin-bottom: 40px;*/
+    /*margin-left: 0px;*/
+    float: right;
+    list-style: outside none none;
+}
+ul.dropdown:nth-child(1) > span {
+    font-family: inherit;
+    font-size: initial;
+    color: white;
+    font-style: normal;
+    font-weight: bold;
+}
+body {font-family:arial; font-size:11px;}
+.clear {clear:both}
+/* remove the list style */
+#nav {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+/* make the LI display inline */
+/* it's position relative so that position absolute */
+/* can be used in submenu */
+#nav li {
+    float:left;
+    display:block;
+    width:100px;
+    background:#ccc;
+    position:relative;
+    z-index:500;
+    margin:0 1px;
+}
+
+/* this is the parent menu */
+#nav li a {
+    display:block;
+    padding:8px 5px 0 5px;
+    font-weight:700;
+    height:23px;
+    text-decoration:none;
+    color:#fff;
+    text-align:center;
+    color:#333;
+}
+
+#nav li a:hover {
+    color:#fff;
+}
+
+/* you can make a different style for default selected value */
+#nav a.selected {
+    color:#f00;
+}
+
+/* submenu, it's hidden by default */
+#nav ul {
+    position:absolute;
+    left:0;
+    display:none;
+    margin:0 0 0 -1px;
+    padding:0;
+    list-style:none;
+}
+
+#nav ul li {
+    width:100px;
+    float:left;
+    border-top:1px solid #fff;
+}
+
+/* display block will make the link fill the whole area of LI */
+#nav ul a {
+    display:block;
+    height:15px;
+    padding: 8px 5px;
+    color:#666;
+}
+
+#nav ul a:hover {
+    text-decoration:underline;
+}
+
+/* fix ie6 small issue */
+/* we should always avoid using hack like this */
+/* should put it into separate file : ) */
+*html #nav ul {
+    margin:0 0 0 -2px;
+}
+
+#main-menu li ul li {
+    display: none;
+}
+
+header nav {
+    margin-top: 0px;
+    display: block;
+}
+
+header img {
+    max-height: 85px;
+    max-width: auto;
+    margin-block-start: -12px;
+}
+#sub_invisible nav ul li a {
+    padding: 20px 10px 20px 10px;
+}
+#mSubContainer{
+
+}
+
+.vertical {
+    position: absolute !important;
+    float: none !important;
+    display: block;
+    background: linear-gradient(#FAA500 0%, #000000 50%) !important;
+}
+#main-menu li ul li {
+    position: relative;
+    padding: -8px;
+    clear: left;
+    float: initial;
 }

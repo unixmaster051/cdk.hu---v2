@@ -6755,7 +6755,7 @@ button.close {
 }
 
 .pull-left {
-    float: left !important
+    /*float: left !important*/  /* TODO: WUT? */
 }
 
 .hide {

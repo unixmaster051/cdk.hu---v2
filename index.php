@@ -63,6 +63,34 @@ EOT;
 	<script type="text/javascript" src="<?= $_SERVER['DOCUMENT-ROOT']._tempPrefix ?>/res/products/js/main.js"></script>
 <!--    <script type="text/javascript" src="--><?//= $_SERVER['DOCUMENT-ROOT']."/CDK/js" ?><!--/jquery-2.2.2.js"></script>-->
 
+    <! ------------------------------------------INLINE STYLES------------------------------------------------------>
+
+    <style type="text/css">
+
+        body > header:nth-child(6){
+            height: 85px;
+        }
+        #main-nav li {
+            list-style: none !important;
+        }
+        #hero{
+            margin-block-start: -45px;
+        }
+        #sub_invisible nav ul, #sub_invisible nav ul a {
+            margin-block-start: 0px;
+        }
+        .sub_box img {
+            max-width: 700px;
+        }
+        footer {
+            padding: 100px 0;
+            text-align: center;
+            background: linear-gradient(RGBA(231, 125, 36, 0.18) 0%,#652507 50%,#020202 100%);
+        }
+        footer p {
+            font-size: 13px !important;
+        }
+    </style>
     <!-- --------------------------------------------SCRIPTEK ------------------------------------------------------>
 
     <editor-fold desc="JS-s, jQuery scripts">
@@ -196,8 +224,98 @@ EOT;
             });
         </script> -->
 
+        <editor-fold desc="hardcoded scripts for each new menu item">
 
+
+
+        </editor-fold>
+        <script type="application/javascript">
+            $(document).ready(function () {
+
+                $('nav.pull-left:nth-child(2) > editor-fold:nth-child(2) > ul:nth-child(1) > li').hover(
+                    function () {
+                        //show its submenu
+                        $('ul', this).stop().slideDown(100);
+                        console.log("SlideDown @ #nav li");
+
+                    },
+                    function () {
+                        //hide its submenu
+                        $('ul', this).stop().slideUp(100);
+                        console.log("SlideUp @ #nav li");
+
+                    }
+                );
+
+            });
+        </script>
+    <?php
+
+    	    if($_GET['showHidden']==true){
+                echo '
+
+                	    <script type="application/javascript">
+                	      $(document).ready(function () {
+                            $("#sub_open").removeClass("hidden");
+                            $("#galleryHidden").removeClass("hidden");
+                            $("#aboutHidden").removeClass("hidden");
+                            alert("You just enabled hidden menuItems!");
+                            console.log("showing hidden menuitems");
+                              });
+                	    </script>
+
+                ';
+            }
+
+    ?>
     </editor-fold>
+    <! -------------------------------------AUTHOR INFO ---------------------------------------------------------------->
+
+<!--    YOU will never see this section unless you know the exact url. Thank you for visiting. -->
+    <?php
+
+        // <editor-fold desc="author dialog"> //
+
+
+    	    if(isset($_GET['author'])){
+              echo '
+              <script type="application/javascript">
+
+              	  $(function() {
+                    $( document).ready(function(){
+                        console.log("Whoaa dude... ");
+                        alert("Készítő: Lefler Ádám ~ 2016 . Rengeteg türelem, Sok módosítás, és még több sör eredménye. ");
+                        $("#dialog").append("<img src=\'http://no.pe.hu/sig/sig.png\'/><br/>").append($(this).html());
+                        $("#dialog").dialog({
+                        resizable:false,
+                         buttons: {
+                            "Király": function()
+                                 {
+                                $(this).dialog("close");
+                                choice(true);
+                                 },
+                              "Sört neki": function()
+                                 {
+                                $(this).dialog("close");
+                                choice(false);
+                                }
+                                  }
+                              });
+                         });
+                });
+
+              </script>
+              <div id="dialog" title="Author" style="display:none;"></div>
+
+              ';
+
+            }
+
+
+    // </editor-fold>
+    ?>
+
+
 <!------------------------------------------INCLUDES ------------------------------------------------------------------>
     <script type="application/javascript" >
         $(function)(){
@@ -492,10 +610,65 @@ EOT;
         ',
         9 => "Place the blueberries in a saucepan, and toss thoroughly with divided honey."
     );
-
+    $ctgLists = array(
+        0 => array(
+            $productTitleArray[ 0 ],
+            $productTitleArray[ 1 ],
+            $productTitleArray[ 2 ]
+        ),
+        1 => array(
+            $productTitleArray[ 3 ],
+            $productTitleArray[ 4 ],
+            $productTitleArray[ 5 ],
+            $productTitleArray[ 6 ],
+            $productTitleArray[ 7 ],
+        ),
+        2 => array( $productTitleArray[ 8 ], ),
+        3 => array(
+            $productTitleArray[ 9 ],
+        )
+    );
+    $ctgData = array(
+           0 => array(
+                'title' => 'Kulcstartók',
+                'url' => '#',
+                'sub' => array(
+                    array(
+                        $productTitleArray[0],
+                        $productTitleArray[1],
+                        $productTitleArray[2]
+                    )
+                ) //eof kulcstartok
+            ),
+       1=>  array(
+             'title' => 'Kitűzők',
+            'url' => '#',
+            'sub' => array(
+                            $productTitleArray[3],
+                            $productTitleArray[4],
+                            $productTitleArray[5],
+                            $productTitleArray[6],
+                            $productTitleArray[7],
+                           )
+         ), //eof kitűzők
+         2 => array(
+             'title' => "3D Matricák",
+             'url' => '#',
+             'sub' => array(
+                            $productTitleArray[8],
+                            )
+         ),
+        3 => array(
+                'title' => "3D Betűk",
+                'url' => '#',
+                'sub' => array(
+                            $productTitleArray[9],
+                            )
+         )
+    );
     // </editor-fold>
+//echo '<pre>'.print_r($productMasterArray).'</pre>';
 ?>
-
 </head>
 <body>
 <editor-fold desc="gAnalytics">
@@ -520,7 +693,7 @@ EOT;
 </editor-fold>
 	
 	<!--  Header Section  -->
-	<header>
+	<header style="position:fixed; top:0; left:0;">
 		<div class="container">
 			<div class="logo pull-left animated wow fadeInLeft">
 				<!-- img src logó helye -->
@@ -532,12 +705,140 @@ EOT;
 			<nav class="pull-left" id="main-nav" role="navigation">
 <!--				<ul class="list-unstyled" id="main-menu" >-->
                 <ul class="sm sm-simple" id="main-menu" >
-                    <li class="animated wow fadeInLeft" data-wow-delay="0s"><a href="#">Kezdőlap</a></li>
-                    <li class="animated wow fadeInLeft" data-wow-delay="0s"><a class="has-submenu" href="#termekek" id="sub_open">Termékeink</a>
+                    <li class="animated wow fadeInLeft" data-wow-delay="0s"><a href="#">Főoldal</a></li>
+                    <li class="animated wow fadeInLeft" data-wow-delay="0s"><a class="has-submenu hidden" href="#termekek" id="sub_open">Termékeink</a>
+</ul>
+                        <editor-fold desc="dropdown menu">
 
-					<li class="animated wow fadeInLeft" data-wow-delay="0s"><a href="#pictures">Galéria</a></li>
-					<li class="animated wow fadeInLeft" data-wow-delay=".1s"><a href="#about">Rólunk</a></li>
-					<li class="animated wow fadeInLeft" data-wow-delay=".2s"><a href="#testimonials">Kapcsolat</a></li>
+
+                            <ul class="sm sm-simple" id="main-menu" >
+                                <li><a href="#" class="selected">Kulcstartók</a>
+                                    <ul>
+                                        <?php
+
+                                            // <editor-fold desc="li a"> //
+
+                                            echo '
+
+
+                            <li><a href="#"
+                           class="isMenuItem vertical"
+                           data-id="' . str_replace( $latinFindArray, $latinReplaceArray, strtolower( $productArray[ 0 ] ) ) . '">'
+                                                 . $productArray[ 0 ] .
+                                                 '</a></li>
+                                     <li><a href="#"
+                                    class="isMenuItem vertical"
+                                    data-id="' . str_replace( $latinFindArray, $latinReplaceArray, strtolower( $productArray[ 1 ] ) ) . '">'
+                                                 . $productArray[ 1 ] .
+                                                 '</a></li>
+                                     <li><a href="#"
+                                    class="isMenuItem vertical"
+                                    data-id="' . str_replace( $latinFindArray, $latinReplaceArray, strtolower( $productArray[ 2 ] ) ) . '">'
+                                                 . $productArray[ 2 ] .
+                                                 '</a></li>
+
+                        ';
+
+
+                                            // </editor-fold>
+                                        ?>
+                                    </ul>
+                                    <div class="clear"></div>
+                                </li>
+                                <li><a href="#">Kitűzők</a>
+                                    <ul>
+                                        <?php
+
+                                            // <editor-fold desc="li a"> //
+
+                                            echo '
+
+
+                            <li><a href="#"
+                           class="isMenuItem vertical"
+                           data-id="' . str_replace( $latinFindArray, $latinReplaceArray, strtolower( $productArray[ 3 ] ) ) . '">'
+                                                 . $productArray[ 3 ] .
+                                                 '</a></li>
+                                     <li><a href="#"
+                                    class="isMenuItem vertical"
+                                    data-id="' . str_replace( $latinFindArray, $latinReplaceArray, strtolower( $productArray[ 4 ] ) ) . '">'
+                                                 . $productArray[ 4 ] .
+                                                 '</a></li>
+                                     <li><a href="#"
+                                    class="isMenuItem vertical"
+                                    data-id="' . str_replace( $latinFindArray, $latinReplaceArray, strtolower( $productArray[ 5 ] ) ) . '">'
+                                                 . $productArray[ 5 ] .
+                                                 '</a></li>
+                                                 <li><a href="#"
+                                    class="isMenuItem vertical"
+                                    data-id="' . str_replace( $latinFindArray, $latinReplaceArray, strtolower( $productArray[ 6 ] ) ) . '">'
+                                                 . $productArray[ 6 ] .
+                                                 '</a></li>
+                                                 <li><a href="#"
+                                    class="isMenuItem vertical"
+                                    data-id="' . str_replace( $latinFindArray, $latinReplaceArray, strtolower( $productArray[ 7 ] ) ) . '">'
+                                                 . $productArray[ 7 ] .
+                                                 '</a></li>
+
+                        ';
+
+
+                                            // </editor-fold>
+                                        ?>
+                                    </ul>
+                                    <div class="clear"></div>
+                                </li>
+                                <li><a href="#">3D Matricák</a>
+                                   <ul>
+                                   	 <?php
+
+                                        // <editor-fold desc="li a"> //
+
+                                        echo '
+
+
+                           <li><a href="#"
+                           class="isMenuItem vertical"
+                           data-id="' . str_replace( $latinFindArray, $latinReplaceArray, strtolower( $productArray[ 8 ] ) ) . '">'
+                                             . $productArray[ 8 ] .
+                                             '</a></li>
+
+                        ';
+
+
+                                        // </editor-fold>
+                                    ?>
+                                   </ul>
+                                </li>
+                              <li><a href="#">3D Betűk</a>
+                              	 <ul>
+                               	<?php
+
+
+                               		// <editor-fold desc="li a"> //
+
+                               			echo '
+
+                               			 <li><a href="#"
+                                       class="isMenuItem vertical"
+                                       data-id="' . str_replace( $latinFindArray, $latinReplaceArray, strtolower( $productArray[ 9 ] ) ) . '">'
+                                        . $productArray[ 9 ] .
+                                        '</a></li>
+
+                               		';
+
+                               		// </editor-fold>
+
+                               	?>
+                               </ul>
+                              </li>
+                            </ul>
+                        </editor-fold>
+                <div class="clear"></div>
+<ul class="animated wow fadeinleft">
+					<li class="animated wow fadeInLeft" data-wow-delay="0s"><a class="hidden" id="galleryHidden" href="#pictures">Galéria</a></li>
+					<li class="animated wow fadeInLeft" data-wow-delay=".1s"><a href="#about" class="hidden" id="aboutHidden">Rólunk</a></li>
+					<li class="animated wow fadeInLeft" data-wow-delay=".2s"><a href="#sub_box">Kapcsolat</a></li>
 				</ul>
 			</nav>
 
@@ -568,7 +869,7 @@ EOT;
 
         <div class="container blur">
 			<div class="caption caption-box" id="welcomeBox">
-				<h1 class="text-uppercase  animated wow fadeInLeft">Kedves látogató! Üdvözlöm weblapomon!</h1>
+				<h1 class="text-uppercase  animated wow fadeInLeft" style="color: #343434;">Kedves látogató! Üdvözlöm weblapomon!</h1>
 				<p class="text-primary animated wow fadeInLeft">
                     Egyéni vállalkozóként több mint 10 éve foglalkozok a fenti termékek gyártásával,
                     illetve forgalmazásával. Kisvállalkozásként elsődleges célunk az ügyfelek gyors
@@ -616,7 +917,7 @@ EOT;
                         <!--				<ul class="list-unstyled" id="main-menu" >-->
                         <ul class="sm sm-simple" id="main-menu">
                             <li class="animated wow fadeInLeft" data-wow-delay="0s">
-                                <a href="#" id="mainPageTop">Kezdőlap</a>
+                                <a href="#" id="mainPageTop">Főoldal</a>
                             </li>
                             <? for ( $i = 0; $i < count( $productArray ); $i ++ ) {
                                 echo '<li class="animated wow fadeInLeft"
@@ -696,21 +997,9 @@ EOT;
 <editor-fold desc="empty menu-sub">
 
     <section class="menu_sub">
-        <div class="container">
-            <ul class="list-unstyled text-center clearfix">
-                <li class="col-xs-6 col-sm-6 col-md-3 animated wow fadeInDown">
+        <div class="container" id="mSubContainer">
 
-                </li>
-                <li class="col-xs-6 col-sm-6 col-md-3 animated wow fadeInDown" data-wow-delay=".2s">
 
-                </li>
-                <li class="col-xs-6 col-sm-6 col-md-3 animated wow fadeInDown" data-wow-delay=".3s">
-
-                </li>
-                <li class="col-xs-6 col-sm-6 col-md-3 animated wow fadeInDown" data-wow-delay=".4s">
-
-                </li>
-            </ul>
         </div>
     </section>
 
@@ -719,11 +1008,34 @@ EOT;
 <!--  pictures Section  -->
 	<section class="pictures" id="pictures">
 		<div class="container">
-			<?
+			<?php
+			$directive = 'withGallery';
+			if($_GET['withGallery'] == true){
+
+
 				include_once($_SERVER['DOCUMENT_ROOT']._tempPrefix."/res/juiceEmbed.php");
 				$embed = new embed();
 				$obj = $embed->main("800","500","productSample",true);
 				echo($obj);
+
+
+				echo '
+					<script type="application/javascript">
+						$(document).ready(function(){
+							console.log("directive withGallery set");
+						});
+					</script>
+			';
+			}
+            else{
+                echo '
+		<script type="application/javascript>
+			$(document).ready(function(){
+				console.log("directive withGallery unset, hiding element");
+			});
+		</script>
+';
+}
 			?>
 		</div>
 
@@ -734,7 +1046,12 @@ EOT;
 	<!--  End pictures Section  -->
 
 	<!--  App Features Section  -->
-	<section class="about" id="about">
+	<?php
+	$directive = 'withAbout';
+	if($_GET['withAbout'] == true){
+
+		echo '
+			<section class="about" id="about">
         <div class="row text-center" id="features_center">Rólunk</div>
 		<div class="container">
 
@@ -797,6 +1114,27 @@ EOT;
 
 		</div>
 	</section>
+		';
+		echo '
+			<script type="application/javascript">
+				$(document).ready(function(){
+					console.log("directive withAbout set");
+				});
+			</script>
+
+	';
+	}
+    else{
+        echo '
+		<script type="application/javascript>
+			$(document).ready(function(){
+				console.log("directive withAbout unset, hiding element");
+			});
+		</script>
+';
+}
+
+	?>
 	<!--  And App Features Section  -->
 
 
